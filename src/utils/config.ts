@@ -18,7 +18,7 @@ const siteData = {
         show: true,
       },
       {
-        url: "contact",
+        url: "contactus",
         text: "Contact",
         show: true,
       },
@@ -26,6 +26,61 @@ const siteData = {
     phoneNumber: "+21266677898",
     phoneBgColor: "bg-secondary",
     companyName: { fPart: "hello", lPart: "blabla" },
+  },
+  pages: {
+    home: {
+      containers: {
+        carousel: {
+          items: [
+            {
+              image: "carousel-1.jpg",
+              title: "Safe & Secure Home 1",
+              subTitle: "BEST SECURITY SERVICES",
+              buttons: [
+                { url: "services", text: "Services" },
+                { url: "contactus", text: "Contact Us" },
+              ],
+            },
+            {
+              image: "carousel-2.jpg",
+              title: "Safe & Secure Home 2",
+              subTitle: "BEST SECURITY SERVICES",
+              buttons: [
+                { url: "services", text: "Services" },
+                { url: "contactus", text: "Contact Us" },
+              ],
+            },
+            {
+              image: "carousel-3.jpg",
+              title: "Safe & Secure Home 3",
+              subTitle: "BEST SECURITY SERVICES",
+              buttons: [
+                { url: "services", text: "Services" },
+                { url: "about", text: "About Us" },
+              ],
+            },
+            {
+              image: "carousel-1.jpg",
+              title: "Safe & Secure Home 4",
+              subTitle: "BEST SECURITY SERVICES",
+              buttons: [
+                { url: "services", text: "Services" },
+                { url: "about", text: "About Us" },
+              ],
+            },
+            {
+              image: "carousel-3.jpg",
+              title: "Safe & Secure Home 5",
+              subTitle: "BEST SECURITY SERVICES",
+              buttons: [
+                { url: "services", text: "Services" },
+                { url: "about", text: "About Us" },
+              ],
+            },
+          ],
+        },
+      },
+    },
   },
 };
 

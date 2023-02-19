@@ -4,5 +4,17 @@ interface NavItemProps {
   isActive: boolean;
   show: boolean;
 }
+interface CarouselItemButtons {
+  url: string;
+  text: string;
+}
 
-export type { NavItemProps };
+interface CarouselItemProps {
+  image: string;
+  title: string;
+  subTitle: string;
+  isActive: boolean;
+  buttons?: CarouselItemButtons[];
+}
+
+export type { NavItemProps, CarouselItemProps };

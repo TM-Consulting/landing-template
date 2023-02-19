@@ -8,6 +8,7 @@ import {
   Link,
   useRouteMatch,
 } from "react-router-dom";
+import Home from "./pages/Home"
 function App() {
   return (
     <>
@@ -16,7 +17,7 @@ function App() {
 
         <Switch>
           <Route exact path="/home">
-            <h1>Home</h1>
+            <Home/>
           </Route>
           <Route exact path="/about">
             <h1>about</h1>
