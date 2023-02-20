@@ -8,17 +8,19 @@ const Header = () => {
   let location = useLocation();
   return (
     <nav className="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0 sticky-top">
-      <div className="display-5 m-0 text-primary ms-lg-5"  style={{ display: "flex", alignItems: "center" }}>
-        <Link
-          to={"home"}
-          className={`navbar-brand `}
-         
-        >
+      <div
+        className="display-5 m-0 text-primary ms-lg-5"
+        style={{ display: "flex", alignItems: "center" }}
+      >
+        <Link to={"home"} className={`navbar-brand `}>
           <img src={Logo} alt="" style={{ width: "70px" }} />
         </Link>
         <span className="display-5 m-0 text-primary">
-            {siteData.header.companyName.fPart}<span className="text-secondary">{siteData.header.companyName.lPart}</span>
+          {siteData.header.companyName.fPart}
+          <span className="text-secondary">
+            {siteData.header.companyName.lPart}
           </span>
+        </span>
       </div>
 
       <button
@@ -37,7 +39,10 @@ const Header = () => {
                 <NavItem
                   key={index}
                   {...item}
-                  isActive={location.pathname.slice(1) === item.url}
+                  isActive={
+                    location.pathname.slice(1) === item.url ||
+                    (!location.pathname.slice(1) && item.url === "home")
+                  }
                 />
               );
             })}
