@@ -165,29 +165,32 @@ const siteData = {
         services: {
           title: "Services",
           description: "Our Excellent Cloud consultancy services",
-          items:[
+          items: [
             {
               icon: "flaticon-cctv",
               group: "Group1",
               service: "Service1",
-              description: "This is the first service served by the company on the groupo group1",
+              description:
+                "This is the first service served by the company on the groupo group1",
               readmore: "Read More",
             },
             {
               icon: "flaticon-cctv",
               group: "Group2",
               service: "Service2",
-              description: "This is the first service served by the company on the groupo group1",
+              description:
+                "This is the first service served by the company on the groupo group1",
               readmore: "Read More",
             },
             {
               icon: "flaticon-cctv",
               group: "Group3",
               service: "Service3",
-              description: "This is the first service served by the company on the groupo group1",
+              description:
+                "This is the first service served by the company on the groupo group1",
               readmore: "Read More",
-            }
-          ]
+            },
+          ],
         },
         about: {
           title: "About US",
@@ -197,12 +200,26 @@ const siteData = {
           yearsOfExp: "15 Years Experience",
           certificates: "10 Certificates",
         },
-        tesmonial: {
+        testmonial: {
           header: "Testmonial",
           title: " What People Say About Our Services",
           items: [
             {
               image: "testimonial-1.jpg",
+              description:
+                "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
+              clientName: "ATJ",
+              profession: "Product Owner",
+            },
+            {
+              image: "testimonial-2.jpg",
+              description:
+                "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
+              clientName: "ATJ",
+              profession: "Product Owner",
+            },
+            {
+              image: "testimonial-3.jpg",
               description:
                 "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
               clientName: "ATJ",
@@ -221,7 +238,17 @@ const siteData = {
 
         }
       }
-    }
+    },
+    about: {
+      containers: {
+        hero: {
+          title: "About Us",
+          child: { text: "About", url: "about" },
+          parent: { text: "Home", url: "home" },
+          bgImage: "carousel-2.jpg",
+        },
+      },
+    },
   },
 };
 

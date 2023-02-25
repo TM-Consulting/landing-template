@@ -7,6 +7,7 @@ import { siteData } from "./config/config";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
 function App() {
   return (
     <>
@@ -17,13 +18,14 @@ function App() {
           <Route exact path="/">
             <Home containers={siteData.pages.home.containers} />
           </Route>
-          <Route exact path="/Home">
+          <Route exact path="/home">
             <Home containers={siteData.pages.home.containers} />
           </Route>
-          <Route exact path="/Contact">
+          <Route exact path="/contact">
             <Home containers={siteData.pages.contact.containers} />
           </Route>
-          <Route exact path="/About">
+          <Route exact path="/about">
+            <About containers={siteData.pages.about.containers} />
           </Route>
         </Switch>
 

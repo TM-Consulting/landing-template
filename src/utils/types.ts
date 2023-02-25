@@ -31,13 +31,13 @@ interface HeaderProps {
   navLinks: NavItemProps[];
 }
 
-interface linkTitleProps{
+interface linkTitleProps {
   linkTitle: string;
   linkRef: string;
 }
 interface LinksItemProps {
   title: string;
-  linksTitles: linkTitleProps [];
+  linksTitles: linkTitleProps[];
 }
 
 interface ContactInfoProps {
@@ -57,7 +57,7 @@ interface SocialMediaLinksProps {
   SocialMediaLinks: SocialMediaProps [];
 }
 interface FooterProps {
-  pagelinks: LinksItemProps [];
+  pagelinks: LinksItemProps[];
   contactinfo: ContactInfoProps;
   socialmedialinks: SocialMediaLinksProps;
 }
@@ -78,7 +78,7 @@ interface ServiceItemProps {
   readmore: string;
 }
 
-interface ServiceProps{
+interface ServiceProps {
   title: string;
   description: string;
   items: ServiceItemProps[];
@@ -99,9 +99,15 @@ interface testimonialItem {
   profession?: string;
 }
 interface testimonialProps {
-  header:string,
-  title:string,
+  header: string;
+  title: string;
   items: testimonialItem[];
+}
+interface HeroHeaderProps {
+  title: string;
+  child: { text: string; url: string };
+  parent: { text: string; url: string };
+  bgImage?: string;
 }
 export type {
   NavItemProps,
@@ -119,6 +125,5 @@ export type {
   linkTitleProps,
   ContactInfoProps,
   SocialMediaLinksProps,
-
+  HeroHeaderProps,
 };
-
