@@ -79,6 +79,33 @@ const siteData = {
             },
           ],
         },
+        services: {
+          title: "Services",
+          description: "Our Excellent Cloud consultancy services",
+          items:[
+            {
+              icon: "flaticon-cctv",
+              group: "Group1",
+              service: "Service1",
+              description: "This is the first service served by the company on the groupo group1",
+              readmore: "Read More",
+            },
+            {
+              icon: "flaticon-cctv",
+              group: "Group2",
+              service: "Service2",
+              description: "This is the first service served by the company on the groupo group1",
+              readmore: "Read More",
+            },
+            {
+              icon: "flaticon-cctv",
+              group: "Group3",
+              service: "Service3",
+              description: "This is the first service served by the company on the groupo group1",
+              readmore: "Read More",
+            }
+          ]
+        }
       },
     },
   },

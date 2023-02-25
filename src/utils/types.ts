@@ -31,4 +31,19 @@ interface HeaderProps {
   navLinks: NavItemProps[];
 }
 
-export type { NavItemProps, CarouselItemProps, HeaderProps, CarouselProps };
+interface ServiceItemProps {
+  icon: string;
+  group?: string;
+  service: string;
+  description: string;
+  readmore: string;
+}
+
+interface ServiceProps{
+  title: string;
+  description: string;
+  items: ServiceItemProps[];
+}
+
+
+export type { NavItemProps, CarouselItemProps, HeaderProps, CarouselProps, ServiceItemProps, ServiceProps };
