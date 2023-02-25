@@ -1,7 +1,7 @@
 interface NavItemProps {
   url: string;
   text: string;
-  isActive: boolean;
+  isActive?: boolean;
   show: boolean;
 }
 interface CarouselItemButtons {
@@ -17,4 +17,18 @@ interface CarouselItemProps {
   buttons?: CarouselItemButtons[];
 }
 
-export type { NavItemProps, CarouselItemProps };
+interface CarouselProps {
+  items: CarouselItemProps[];
+}
+interface CompanyName {
+  fPart?: string;
+  lPart?: string;
+}
+interface HeaderProps {
+  companyName: CompanyName;
+  phoneNumber: string;
+  phoneBgColor: string;
+  navLinks: NavItemProps[];
+}
+
+export type { NavItemProps, CarouselItemProps, HeaderProps, CarouselProps };

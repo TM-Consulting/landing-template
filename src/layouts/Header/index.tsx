@@ -1,10 +1,15 @@
 import { useLocation, Link } from "react-router-dom";
-import { siteData } from "../../utils/config";
 import NavItem from "./NavItem";
 
-import Logo from "../../assets/img/logo.png";
+import Logo from "../../config/images/logo.png";
+import { HeaderProps } from "../../utils/types";
 
-const Header = () => {
+const Header = ({
+  companyName,
+  phoneNumber,
+  phoneBgColor,
+  navLinks,
+}: HeaderProps) => {
   let location = useLocation();
   return (
     <nav className="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0 sticky-top">
@@ -16,10 +21,8 @@ const Header = () => {
           <img src={Logo} alt="" style={{ width: "70px" }} />
         </Link>
         <span className="display-5 m-0 text-primary">
-          {siteData.header.companyName.fPart}
-          <span className="text-secondary">
-            {siteData.header.companyName.lPart}
-          </span>
+          {companyName.fPart}
+          <span className="text-secondary">{companyName.lPart}</span>
         </span>
       </div>
 
@@ -34,7 +37,7 @@ const Header = () => {
       <div className="collapse navbar-collapse" id="navbarCollapse">
         <div className="navbar-nav ms-auto py-0">
           <>
-            {siteData?.header?.navLinks?.map((item, index) => {
+            {navLinks?.map((item, index) => {
               return (
                 <NavItem
                   key={index}
@@ -48,11 +51,11 @@ const Header = () => {
             })}
           </>
           <a
-            href={`tel:${siteData?.header?.phoneNumber}`}
-            className={`nav-item nav-link nav-contact ${siteData?.header?.phoneBgColor} text-white px-5 ms-lg-5`}
+            href={`tel:${phoneNumber}`}
+            className={`nav-item nav-link nav-contact ${phoneBgColor} text-white px-5 ms-lg-5`}
           >
             <i className="bi bi-telephone-outbound me-2"></i>
-            {siteData?.header?.phoneNumber}
+            {phoneNumber}
           </a>
         </div>
       </div>

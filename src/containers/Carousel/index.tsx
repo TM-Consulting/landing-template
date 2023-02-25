@@ -1,7 +1,7 @@
-import { siteData } from "../../utils/config";
 import CarouselItem from "../../components/CarouselItem";
+import { CarouselProps } from "../../utils/types";
 
-const index = () => {
+const index = ({ items }: CarouselProps) => {
   return (
     <div className="container-fluid p-0 mb-5">
       <div
@@ -10,33 +10,21 @@ const index = () => {
         data-bs-ride="carousel"
       >
         <div className="carousel-indicators">
-          {siteData?.pages?.home?.containers?.carousel?.items.map(
-            (item, index) => (
-              <button
-                type="button"
-                data-bs-target="#header-carousel"
-                data-bs-slide-to={`${index}`}
-                className={`${
-                  index ===
-                    siteData?.pages?.home?.containers?.carousel?.items.length -
-                      1 && "active"
-                }`}
-                aria-label={` Slide ${index + 1}`}
-                aria-current={`${
-                  index ===
-                    siteData?.pages?.home?.containers?.carousel?.items.length -
-                      1 && "true"
-                }`}
-              ></button>
-            )
-          )}
+          {items.map((item, index) => (
+            <button
+              type="button"
+              data-bs-target="#header-carousel"
+              data-bs-slide-to={`${index}`}
+              className={`${index === items.length - 1 && "active"}`}
+              aria-label={` Slide ${index + 1}`}
+              aria-current={`${index === items.length - 1 && "true"}`}
+            ></button>
+          ))}
         </div>
         <div className="carousel-inner">
-          {siteData?.pages?.home?.containers?.carousel?.items.map(
-            (item, index) => (
-              <CarouselItem {...item} key={index} isActive={index === 0} />
-            )
-          )}
+          {items.map((item, index) => (
+            <CarouselItem {...item} key={index} isActive={index === 0} />
+          ))}
         </div>
         <button
           className="carousel-control-prev"

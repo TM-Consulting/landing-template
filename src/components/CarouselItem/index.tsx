@@ -11,7 +11,7 @@ const index = ({
     <div className={`carousel-item ${isActive && "active"}`}>
       <img
         className="w-100"
-        src={require(`../../assets/img/${image}`)}
+        src={require(`../../config/images/${image}`)}
         alt="Image"
       />
       <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
