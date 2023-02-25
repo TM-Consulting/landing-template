@@ -20,6 +20,16 @@ interface CarouselItemProps {
 interface CarouselProps {
   items: CarouselItemProps[];
 }
+interface OldProjectItem {
+  image: string;
+  name: string;
+  description: string;
+}
+interface OldProjectsProps {
+  items: OldProjectItem[];
+  header: string;
+  title: string;
+}
 interface CompanyName {
   fPart?: string;
   lPart?: string;
@@ -54,7 +64,7 @@ interface SocialMediaProps {
 
 interface SocialMediaLinksProps {
   title: string;
-  SocialMediaLinks: SocialMediaProps [];
+  SocialMediaLinks: SocialMediaProps[];
 }
 interface FooterProps {
   pagelinks: LinksItemProps[];
@@ -126,4 +136,6 @@ export type {
   ContactInfoProps,
   SocialMediaLinksProps,
   HeroHeaderProps,
+  OldProjectsProps,
+  OldProjectItem,
 };

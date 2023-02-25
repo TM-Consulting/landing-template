@@ -242,6 +242,27 @@ const siteData = {
           bgImage: "carousel-2.jpg",
         },
         about: { ...commonContainers.about },
+        oldProjects: {
+          header: "Old Project",
+          title: "Please check our old projects",
+          items: [
+            {
+              name: "ATJ",
+              image: "team-1.jpg",
+              description: " rojoula had khouna ajiw 3Ndu",
+            },
+            {
+              name: "Moad",
+              image: "team-4.jpg",
+              description: " rojoula had khouna ajiw 3Ndu",
+            },
+            {
+              name: "Moad",
+              image: "testimonial-2.jpg",
+              description: " rojoula had khouna ajiw 3Ndu",
+            },
+          ],
+        },
       },
     },
 
@@ -265,6 +286,27 @@ const siteData = {
           child: { text: "Contact", url: "contact" },
           parent: { text: "Home", url: "home" },
           bgImage: "carousel-2.jpg",
+        },
+        contact: {
+          header: "Contact Us",
+          title: "Please Feel Free To Contact Us",
+          form: {
+            placeholders: {},
+          },
+          contactInfos: {
+            address: {
+              title: "Our Office",
+              value: "123 Street, New York, USA",
+            },
+            email: {
+              title: "Email Us",
+              value: "moad@testmail.com",
+            },
+            phone: {
+              title: "Call Us",
+              value: "+012 345 6789",
+            },
+          },
         },
       },
     },
