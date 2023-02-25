@@ -230,7 +230,7 @@ const siteData = {
           title: "About Us",
           child: { text: "About", url: "about" },
           parent: { text: "Home", url: "home" },
-          bgImage: "carousel-3.jpg",
+          bgImage: "carousel-2.jpg",
         },
       },
     },

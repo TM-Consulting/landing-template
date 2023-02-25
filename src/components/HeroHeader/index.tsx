@@ -9,7 +9,7 @@ const index = (props: HeroHeaderProps) => {
       className="container-fluid bg-primary p-5 hero-header mb-5"
       style={{
         color: "red",
-        backgroundImage: `url(require("../../config/images/carousel-1.jpg"))`,
+        backgroundImage: `url(${require(`../../config/images/${bgImage}`)})`,
       }}
     >
       <div className="row py-5">
