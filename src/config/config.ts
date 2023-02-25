@@ -27,6 +27,74 @@ const siteData = {
     phoneBgColor: "bg-secondary",
     companyName: { fPart: "hello", lPart: "blabla" },
   },
+  footer: {
+    pagelinks: [
+      {
+        title: "Quick Links",
+        linksTitles: [
+        {
+          linkTitle: "Home",
+          linkRef: "/Home",
+        },
+        {
+          linkTitle: "About Us",
+          linkRef: "/About",
+        },
+        {
+          linkTitle: "Contact Us",
+          linkRef: "/Contact",
+        },
+        {
+          linkTitle: "Our Services",
+          linkRef: "/Services",
+        }
+        ]
+      },
+      {
+        title: "Popular Links",
+        linksTitles: [
+        {
+          linkTitle: "Home",
+          linkRef: "/Home",
+        },
+        {
+          linkTitle: "About Us",
+          linkRef: "/About",
+        },
+        {
+          linkTitle: "Contact Us",
+          linkRef: "/Contact",
+        },
+        {
+          linkTitle: "Our Services",
+          linkRef: "/Services",
+        }
+        ]
+      },
+    ],    
+    contactinfo:
+    {
+      title: "Get In Touch",
+      companyAddress: "63 rue du lieutenant colonel prudhon, Argenteuil 95100",
+      phoneNumber: "+33 7 58 59 75 95",
+      emailAddress: "mikou.mouad.mail@gmail.com",
+    },
+    socialmedialinks:
+    {
+      title: "Follow Us",
+      twitterLink: "",
+      facebookLink: "https://www.facebook.com/",
+      linkedinLink: "https://www.linkedin.com/in/mouad-mikou-a33008130/",
+      instagramLink: ""
+    }
+  },
+  copyright: {
+    companyName: "MIT Consulting",
+    producerName: "Tounissi Edition",
+    producerLink: "https://www.linkedin.com/in/monaim-touinssi/",
+    mention: ". All Rights Reserved.",
+    designedby: "Designed by"
+  },
   pages: {
     home: {
       containers: {
@@ -129,6 +197,16 @@ const siteData = {
         },
       },
     },
+    contact: {
+      containers:{
+        header:{
+
+        },
+        contact:{
+
+        }
+      }
+    }
   },
 };
 

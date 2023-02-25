@@ -31,6 +31,43 @@ interface HeaderProps {
   navLinks: NavItemProps[];
 }
 
+interface linkTitleProps{
+  linkTitle: string;
+  linkRef: string;
+}
+interface LinksItemProps {
+  title: string;
+  linksTitles: linkTitleProps [];
+}
+
+interface ContactInfoProps {
+  title: string;
+  companyAddress: string;
+  phoneNumber: string;
+  emailAddress: string;
+}
+
+interface SocialMediaLinksProps {
+  title: string;
+  twitterLink: string;
+  facebookLink: string;
+  linkedinLink: string;
+  instagramLink: string;
+}
+interface FooterProps {
+  pagelinks: LinksItemProps [];
+  contactinfo: ContactInfoProps;
+  socialmedialinks: SocialMediaLinksProps;
+}
+
+interface CopyrightProps {
+  companyName: string;
+  producerName: string;
+  producerLink: string;
+  mention: string;
+  designedby: string;
+}
+
 interface ServiceItemProps {
   icon: string;
   group?: string;
@@ -74,4 +111,12 @@ export type {
   ServiceProps,
   testimonialProps,
   testimonialItem,
+  FooterProps,
+  CopyrightProps,
+  LinksItemProps,
+  linkTitleProps,
+  ContactInfoProps,
+  SocialMediaLinksProps,
+
 };
+
