@@ -84,7 +84,12 @@ const siteData = {
         show: true,
       },
       {
-        url: "contactus",
+        url: "career",
+        text: "Career",
+        show: true,
+      },
+      {
+        url: "contact",
         text: "Contact",
         show: true,
       },
@@ -184,7 +189,7 @@ const siteData = {
               subTitle: "BEST SECURITY SERVICES",
               buttons: [
                 { url: "services", text: "Services" },
-                { url: "contactus", text: "Contact Us" },
+                { url: "contact", text: "Contact Us" },
               ],
             },
             {
@@ -193,7 +198,7 @@ const siteData = {
               subTitle: "BEST SECURITY SERVICES",
               buttons: [
                 { url: "services", text: "Services" },
-                { url: "contactus", text: "Contact Us" },
+                { url: "contact", text: "Contact Us" },
               ],
             },
             {
@@ -228,12 +233,6 @@ const siteData = {
         ...commonContainers,
       },
     },
-    contact: {
-      containers: {
-        header: {},
-        contact: {},
-      },
-    },
     about: {
       containers: {
         hero: {
@@ -256,6 +255,27 @@ const siteData = {
         },
         services: { ...commonContainers.services },
         testmonial: { ...commonContainers.testmonial },
+      },
+    },
+
+    contact: {
+      containers: {
+        hero: {
+          title: "Contact Us",
+          child: { text: "Contact", url: "contact" },
+          parent: { text: "Home", url: "home" },
+          bgImage: "carousel-2.jpg",
+        },
+      },
+    },
+    career: {
+      containers: {
+        hero: {
+          title: "Career",
+          child: { text: "Career", url: "career" },
+          parent: { text: "Home", url: "home" },
+          bgImage: "carousel-3.jpg",
+        },
       },
     },
   },
