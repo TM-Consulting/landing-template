@@ -114,6 +114,19 @@ const siteData = {
           yearsOfExp: "15 Years Experience",
           certificates: "10 Certificates",
         },
+        tesmonial: {
+          header: "Testmonial",
+          title: " What People Say About Our Services",
+          items: [
+            {
+              image: "testimonial-1.jpg",
+              description:
+                "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
+              clientName: "ATJ",
+              profession: "Product Owner",
+            },
+          ],
+        },
       },
     },
   },

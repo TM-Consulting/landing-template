@@ -52,6 +52,18 @@ interface aboutProps {
   yearsOfExp?: string;
   certificates?: string;
 }
+
+interface testimonialItem {
+  image: string;
+  description: string;
+  clientName?: string;
+  profession?: string;
+}
+interface testimonialProps {
+  header:string,
+  title:string,
+  items: testimonialItem[];
+}
 export type {
   NavItemProps,
   CarouselItemProps,
@@ -59,5 +71,7 @@ export type {
   CarouselProps,
   aboutProps,
   ServiceItemProps,
-  ServiceProps
+  ServiceProps,
+  testimonialProps,
+  testimonialItem,
 };
