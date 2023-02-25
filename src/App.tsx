@@ -6,6 +6,7 @@ import { siteData } from "./config/config";
 // This is a React Router v5 app
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 function App() {
   return (
     <>

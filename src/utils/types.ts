@@ -47,12 +47,14 @@ interface ContactInfoProps {
   emailAddress: string;
 }
 
+interface SocialMediaProps {
+  provider: string;
+  link: string;
+}
+
 interface SocialMediaLinksProps {
   title: string;
-  twitterLink: string;
-  facebookLink: string;
-  linkedinLink: string;
-  instagramLink: string;
+  SocialMediaLinks: SocialMediaProps [];
 }
 interface FooterProps {
   pagelinks: LinksItemProps [];

@@ -34,19 +34,19 @@ const siteData = {
         linksTitles: [
         {
           linkTitle: "Home",
-          linkRef: "/Home",
+          linkRef: "/home",
         },
         {
           linkTitle: "About Us",
-          linkRef: "/About",
+          linkRef: "/about",
         },
         {
           linkTitle: "Contact Us",
-          linkRef: "/Contact",
+          linkRef: "/contact",
         },
         {
           linkTitle: "Our Services",
-          linkRef: "/Services",
+          linkRef: "/services",
         }
         ]
       },
@@ -55,19 +55,19 @@ const siteData = {
         linksTitles: [
         {
           linkTitle: "Home",
-          linkRef: "/Home",
+          linkRef: "/home",
         },
         {
           linkTitle: "About Us",
-          linkRef: "/About",
+          linkRef: "/about",
         },
         {
           linkTitle: "Contact Us",
-          linkRef: "/Contact",
+          linkRef: "/contact",
         },
         {
           linkTitle: "Our Services",
-          linkRef: "/Services",
+          linkRef: "/services",
         }
         ]
       },
@@ -82,10 +82,25 @@ const siteData = {
     socialmedialinks:
     {
       title: "Follow Us",
-      twitterLink: "",
-      facebookLink: "https://www.facebook.com/",
-      linkedinLink: "https://www.linkedin.com/in/mouad-mikou-a33008130/",
-      instagramLink: ""
+      SocialMediaLinks: 
+      [
+        {
+          provider: "twitter",
+          link: "",
+        },
+        {
+          provider: "facebook",
+          link: "https://www.facebook.com/",
+        },
+        {
+          provider: "linkedin",
+          link: "https://www.linkedin.com/in/mouad-mikou-a33008130/",
+        },
+        {
+          provider: "instagram",
+          link: "",
+        },
+      ]
     }
   },
   copyright: {
