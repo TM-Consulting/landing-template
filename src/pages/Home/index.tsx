@@ -4,7 +4,7 @@ const index = (props: any) => {
   return (
     <>
       <Carousel items={props.containers?.carousel?.items} />
-      <About />
+      <About {...props.containers.about} />
     </>
   );
 };

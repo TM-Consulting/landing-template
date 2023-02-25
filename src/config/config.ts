@@ -79,6 +79,14 @@ const siteData = {
             },
           ],
         },
+        about: {
+          title: "About US",
+          titleOffer: "We Offers Quality CCTV Systems & Services",
+          description:
+            "Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet et magna",
+          yearsOfExp: "15 Years Experience",
+          certificates: "10 Certificates",
+        },
       },
     },
   },
