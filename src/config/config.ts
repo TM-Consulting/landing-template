@@ -79,8 +79,8 @@ const siteData = {
         show: true,
       },
       {
-        url: "service",
-        text: "Service",
+        url: "services",
+        text: "Services",
         show: true,
       },
       {
@@ -98,44 +98,44 @@ const siteData = {
       {
         title: "Quick Links",
         linksTitles: [
-        {
-          linkTitle: "Home",
-          linkRef: "/home",
-        },
-        {
-          linkTitle: "About Us",
-          linkRef: "/about",
-        },
-        {
-          linkTitle: "Contact Us",
-          linkRef: "/contact",
-        },
-        {
-          linkTitle: "Our Services",
-          linkRef: "/services",
-        }
-        ]
+          {
+            linkTitle: "Home",
+            linkRef: "/home",
+          },
+          {
+            linkTitle: "About Us",
+            linkRef: "/about",
+          },
+          {
+            linkTitle: "Contact Us",
+            linkRef: "/contact",
+          },
+          {
+            linkTitle: "Our Services",
+            linkRef: "/services",
+          },
+        ],
       },
       {
         title: "Popular Links",
         linksTitles: [
-        {
-          linkTitle: "Home",
-          linkRef: "/home",
-        },
-        {
-          linkTitle: "About Us",
-          linkRef: "/about",
-        },
-        {
-          linkTitle: "Contact Us",
-          linkRef: "/contact",
-        },
-        {
-          linkTitle: "Our Services",
-          linkRef: "/services",
-        }
-        ]
+          {
+            linkTitle: "Home",
+            linkRef: "/home",
+          },
+          {
+            linkTitle: "About Us",
+            linkRef: "/about",
+          },
+          {
+            linkTitle: "Contact Us",
+            linkRef: "/contact",
+          },
+          {
+            linkTitle: "Our Services",
+            linkRef: "/services",
+          },
+        ],
       },
     ],
     contactinfo: {
@@ -146,8 +146,7 @@ const siteData = {
     },
     socialmedialinks: {
       title: "Follow Us",
-      SocialMediaLinks: 
-      [
+      SocialMediaLinks: [
         {
           provider: "twitter",
           link: "",
@@ -164,8 +163,8 @@ const siteData = {
           provider: "instagram",
           link: "",
         },
-      ]
-    }
+      ],
+    },
   },
   copyright: {
     companyName: "MIT Consulting",
@@ -244,6 +243,19 @@ const siteData = {
           bgImage: "carousel-2.jpg",
         },
         about: { ...commonContainers.about },
+      },
+    },
+
+    services: {
+      containers: {
+        hero: {
+          title: "Services",
+          child: { text: "Services", url: "services" },
+          parent: { text: "Home", url: "home" },
+          bgImage: "carousel-1.jpg",
+        },
+        services: { ...commonContainers.services },
+        testmonial: { ...commonContainers.testmonial },
       },
     },
   },

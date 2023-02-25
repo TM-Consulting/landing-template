@@ -8,6 +8,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Services from "./pages/Services";
 function App() {
   return (
     <>
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route exact path="/about">
             <About containers={siteData.pages.about.containers} />
+          </Route>
+          <Route exact path="/services">
+            <Services containers={siteData.pages.services.containers} />
           </Route>
         </Switch>
 
