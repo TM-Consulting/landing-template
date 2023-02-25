@@ -1,5 +1,12 @@
+import { aboutProps } from "../../utils/types";
 
-const index = () => {
+const index = ({
+  title,
+  titleOffer,
+  description,
+  yearsOfExp,
+  certificates,
+}: aboutProps) => {
   return (
     <div
       className="container-fluid py-5 wow fadeInUp"
@@ -39,61 +46,55 @@ const index = () => {
                   letterSpacing: "5px",
                 }}
               >
-                About Us
+                {title}
               </h5>
-              <h1 className="display-5 mb-0">
-                We Offers Quality CCTV Systems &amp; Services
-              </h1>
+              <h1 className="display-5 mb-0">{titleOffer}</h1>
             </div>
-            <h4 className="text-body fst-italic mb-4">
-              Diam dolor diam ipsum sit. Clita erat ipsum et lorem stet no lorem
-              sit clita duo justo magna dolore
-            </h4>
-            <p className="mb-4">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor
-              sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem
-              et sit, sed stet no labore lorem sit. Sanctus clita duo justo et
-              tempor eirmod magna dolore erat amet et magna
-            </p>
+
+            <p className="mb-4">{description}</p>
             <div className="row g-3">
-              <div
-                className="col-sm-6 wow zoomIn"
-                data-wow-delay="0.6s"
-                style={{
-                  visibility: "visible",
-                  animationDelay: "0.6s",
-                  animationName: "zoomIn",
-                }}
-              >
+              {yearsOfExp && (
                 <div
-                  className="bg-primary d-flex flex-column justify-content-center text-center border-bottom border-5 border-secondary rounded p-3"
+                  className="col-sm-6 wow zoomIn"
+                  data-wow-delay="0.6s"
                   style={{
-                    height: "200px",
+                    visibility: "visible",
+                    animationDelay: "0.6s",
+                    animationName: "zoomIn",
                   }}
                 >
-                  <i className="fa fa-star fa-4x text-white mb-4"></i>
-                  <h4 className="text-white mb-0">15 Years Experience</h4>
+                  <div
+                    className="bg-primary d-flex flex-column justify-content-center text-center border-bottom border-5 border-secondary rounded p-3"
+                    style={{
+                      height: "200px",
+                    }}
+                  >
+                    <i className="fa fa-star fa-4x text-white mb-4"></i>
+                    <h4 className="text-white mb-0">15 Years Experience</h4>
+                  </div>
                 </div>
-              </div>
-              <div
-                className="col-sm-6 wow zoomIn"
-                data-wow-delay="0.9s"
-                style={{
-                  visibility: "visible",
-                  animationDelay: "0.9s",
-                  animationName: "zoomIn",
-                }}
-              >
+              )}
+              {certificates && (
                 <div
-                  className="bg-secondary d-flex flex-column justify-content-center text-center border-bottom border-5 border-primary rounded p-3"
+                  className="col-sm-6 wow zoomIn"
+                  data-wow-delay="0.9s"
                   style={{
-                    height: "200px",
+                    visibility: "visible",
+                    animationDelay: "0.9s",
+                    animationName: "zoomIn",
                   }}
                 >
-                  <i className="fa fa-award fa-4x text-white mb-4"></i>
-                  <h4 className="text-white mb-0">Award Winning</h4>
+                  <div
+                    className="bg-secondary d-flex flex-column justify-content-center text-center border-bottom border-5 border-primary rounded p-3"
+                    style={{
+                      height: "200px",
+                    }}
+                  >
+                    <i className="fa fa-award fa-4x text-white mb-4"></i>
+                    <h4 className="text-white mb-0">Award Winning</h4>
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>

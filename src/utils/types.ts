@@ -45,5 +45,19 @@ interface ServiceProps{
   items: ServiceItemProps[];
 }
 
-
-export type { NavItemProps, CarouselItemProps, HeaderProps, CarouselProps, ServiceItemProps, ServiceProps };
+interface aboutProps {
+  title: string;
+  titleOffer?: string;
+  description: string;
+  yearsOfExp?: string;
+  certificates?: string;
+}
+export type {
+  NavItemProps,
+  CarouselItemProps,
+  HeaderProps,
+  CarouselProps,
+  aboutProps,
+  ServiceItemProps,
+  ServiceProps
+};
