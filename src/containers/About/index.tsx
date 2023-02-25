@@ -67,7 +67,7 @@ const index = (props: aboutProps) => {
                     }}
                   >
                     <i className="fa fa-star fa-4x text-white mb-4"></i>
-                    <h4 className="text-white mb-0">15 Years Experience</h4>
+                    <h4 className="text-white mb-0">{yearsOfExp}</h4>
                   </div>
                 </div>
               )}
@@ -88,7 +88,7 @@ const index = (props: aboutProps) => {
                     }}
                   >
                     <i className="fa fa-award fa-4x text-white mb-4"></i>
-                    <h4 className="text-white mb-0">Award Winning</h4>
+                    <h4 className="text-white mb-0">{certificates}</h4>
                   </div>
                 </div>
               )}

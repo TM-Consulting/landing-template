@@ -1,4 +1,70 @@
-export {};
+const commonContainers = {
+  services: {
+    title: "Services",
+    description: "Our Excellent Cloud consultancy services",
+    items: [
+      {
+        icon: "flaticon-cctv",
+        group: "Group1",
+        service: "Service1",
+        description:
+          "This is the first service served by the company on the groupo group1",
+        readmore: "Read More",
+      },
+      {
+        icon: "flaticon-cctv",
+        group: "Group2",
+        service: "Service2",
+        description:
+          "This is the first service served by the company on the groupo group1",
+        readmore: "Read More",
+      },
+      {
+        icon: "flaticon-cctv",
+        group: "Group3",
+        service: "Service3",
+        description:
+          "This is the first service served by the company on the groupo group1",
+        readmore: "Read More",
+      },
+    ],
+  },
+  about: {
+    title: "About US",
+    titleOffer: "We Offers Quality CCTV Systems & Services",
+    description:
+      "Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet et magna",
+    yearsOfExp: "15 Years Experience",
+    certificates: "10 Certificates",
+  },
+  testmonial: {
+    header: "Testmonial",
+    title: " What People Say About Our Services",
+    items: [
+      {
+        image: "testimonial-1.jpg",
+        description:
+          "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
+        clientName: "ATJ",
+        profession: "Product Owner",
+      },
+      {
+        image: "testimonial-2.jpg",
+        description:
+          "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
+        clientName: "ATJ",
+        profession: "Product Owner",
+      },
+      {
+        image: "testimonial-3.jpg",
+        description:
+          "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
+        clientName: "ATJ",
+        profession: "Product Owner",
+      },
+    ],
+  },
+};
 const siteData = {
   header: {
     navLinks: [
@@ -71,16 +137,14 @@ const siteData = {
         }
         ]
       },
-    ],    
-    contactinfo:
-    {
+    ],
+    contactinfo: {
       title: "Get In Touch",
       companyAddress: "63 rue du lieutenant colonel prudhon, Argenteuil 95100",
       phoneNumber: "+33 7 58 59 75 95",
       emailAddress: "mikou.mouad.mail@gmail.com",
     },
-    socialmedialinks:
-    {
+    socialmedialinks: {
       title: "Follow Us",
       SocialMediaLinks: 
       [
@@ -108,7 +172,7 @@ const siteData = {
     producerName: "Tounissi Edition",
     producerLink: "https://www.linkedin.com/in/monaim-touinssi/",
     mention: ". All Rights Reserved.",
-    designedby: "Designed by"
+    designedby: "Designed by",
   },
   pages: {
     home: {
@@ -162,82 +226,14 @@ const siteData = {
             },
           ],
         },
-        services: {
-          title: "Services",
-          description: "Our Excellent Cloud consultancy services",
-          items: [
-            {
-              icon: "flaticon-cctv",
-              group: "Group1",
-              service: "Service1",
-              description:
-                "This is the first service served by the company on the groupo group1",
-              readmore: "Read More",
-            },
-            {
-              icon: "flaticon-cctv",
-              group: "Group2",
-              service: "Service2",
-              description:
-                "This is the first service served by the company on the groupo group1",
-              readmore: "Read More",
-            },
-            {
-              icon: "flaticon-cctv",
-              group: "Group3",
-              service: "Service3",
-              description:
-                "This is the first service served by the company on the groupo group1",
-              readmore: "Read More",
-            },
-          ],
-        },
-        about: {
-          title: "About US",
-          titleOffer: "We Offers Quality CCTV Systems & Services",
-          description:
-            "Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet et magna",
-          yearsOfExp: "15 Years Experience",
-          certificates: "10 Certificates",
-        },
-        testmonial: {
-          header: "Testmonial",
-          title: " What People Say About Our Services",
-          items: [
-            {
-              image: "testimonial-1.jpg",
-              description:
-                "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
-              clientName: "ATJ",
-              profession: "Product Owner",
-            },
-            {
-              image: "testimonial-2.jpg",
-              description:
-                "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
-              clientName: "ATJ",
-              profession: "Product Owner",
-            },
-            {
-              image: "testimonial-3.jpg",
-              description:
-                "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
-              clientName: "ATJ",
-              profession: "Product Owner",
-            },
-          ],
-        },
+        ...commonContainers,
       },
     },
     contact: {
-      containers:{
-        header:{
-
-        },
-        contact:{
-
-        }
-      }
+      containers: {
+        header: {},
+        contact: {},
+      },
     },
     about: {
       containers: {
@@ -247,6 +243,7 @@ const siteData = {
           parent: { text: "Home", url: "home" },
           bgImage: "carousel-2.jpg",
         },
+        about: { ...commonContainers.about },
       },
     },
   },

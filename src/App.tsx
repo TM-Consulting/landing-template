@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./layouts/Header";
-import Footer from "./layouts/Footer"
-import Copyright from "./layouts/Copyright"
+import Footer from "./layouts/Footer";
+import Copyright from "./layouts/Copyright";
 import { siteData } from "./config/config";
 // This is a React Router v5 app
 import { BrowserRouter, Switch, Route } from "react-router-dom";
