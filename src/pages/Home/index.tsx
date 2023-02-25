@@ -7,8 +7,8 @@ const index = (props: any) => {
     <>
       <Carousel items={props.containers?.carousel?.items} />
       <About {...props.containers.about} />
-      <Services {...props.containers?.services}/>
-      {/* <Testmonial {...props.containers?.carousel?.items} /> */}
+      <Services {...props.containers?.services} />
+      <Testmonial {...props.containers?.testmonial} />
     </>
   );
 };

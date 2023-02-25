@@ -2,6 +2,7 @@ import TesmonialItem from "../../components/TesmonialItem";
 import { testimonialProps } from "../../utils/types";
 
 const index = ({ header, title, items }: testimonialProps) => {
+  if (!items) return <></>;
   return (
     <div
       className="container-fluid py-5 wow fadeInUp"
@@ -27,32 +28,14 @@ const index = ({ header, title, items }: testimonialProps) => {
             <div
               className="owl-stage"
               style={{
-                transition: "all 0s ease 0s",
-                width: "4470px",
-                transform: "translate3d(-894px, 0px, 0px)",
+                display: "flex",
+                justifyContent: "space-between",
+                flexWrap: "wrap",
               }}
             >
               {items.map((item, index) => (
                 <TesmonialItem key={index} {...item} />
               ))}
-            </div>
-          </div>
-          <div className="owl-nav disabled">
-            <div className="owl-prev">prev</div>
-            <div className="owl-next">next</div>
-          </div>
-          <div className="owl-dots">
-            <div className="owl-dot active">
-              <span></span>
-            </div>
-            <div className="owl-dot">
-              <span></span>
-            </div>
-            <div className="owl-dot">
-              <span></span>
-            </div>
-            <div className="owl-dot">
-              <span></span>
             </div>
           </div>
         </div>

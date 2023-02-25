@@ -1,0 +1,13 @@
+/* At the top level of your code */
+@media screen and (min-width: 991px) {
+  .owl-item {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .owl-stage {
+    flex-wrap: nowrap !important;
+    gap: 15px;
+  }
+}

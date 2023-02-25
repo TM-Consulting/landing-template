@@ -7,10 +7,7 @@ const index = ({
   profession,
 }: testimonialItem) => {
   return (
-    <div
-      className="owl-item active center"
-      style={{ width: "402px", marginRight: "45px" }}
-    >
+    <div className="owl-item">
       <div className="text-center pb-4">
         <img
           className="img-fluid mx-auto rounded-circle"

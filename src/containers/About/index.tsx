@@ -1,12 +1,9 @@
 import { aboutProps } from "../../utils/types";
 
-const index = ({
-  title,
-  titleOffer,
-  description,
-  yearsOfExp,
-  certificates,
-}: aboutProps) => {
+const index = (props: aboutProps) => {
+  const { title, titleOffer, description, yearsOfExp, certificates } = props;
+  if (!props) return <></>;
+
   return (
     <div
       className="container-fluid py-5 wow fadeInUp"

@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 import "./assets/lib/flaticon/font/flaticon.css";
 import "./assets/lib/owlcarousel/assets/owl.carousel.min.css";
 import "./assets/lib/animate/animate.min.css";
+import "./globalStyles.css";
 
 // Customized Bootstrap Stylesheet
 import "./assets/css/bootstrap.min.css";
@@ -20,10 +21,13 @@ root.render(
   <React.StrictMode>
     <App />
     <Helmet>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" defer></script>
-      
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        defer
+      ></script>
+
       <script
         src="./assets/lib/wow/wow.min.js"
         type="text/javascript"

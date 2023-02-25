@@ -2,6 +2,7 @@ import CarouselItem from "../../components/CarouselItem";
 import { CarouselProps } from "../../utils/types";
 
 const index = ({ items }: CarouselProps) => {
+  if (!items) return <></>;
   return (
     <div className="container-fluid p-0 mb-5">
       <div
