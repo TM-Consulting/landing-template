@@ -148,6 +148,20 @@ interface ContactProps {
   mapsurl: string
 }
 
+interface FormFieldProps {
+  id: string;
+  type: string;
+  required: boolean;
+  placeholder: string;
+  fullWidth?: boolean;
+  order: number;
+  minlength?: number;
+}
+interface FormProps {
+  fields: FormFieldProps[];
+  buttonTitle: string;
+  errorMessage: string;
+}
 export type {
   NavItemProps,
   ContactProps,
@@ -170,5 +184,7 @@ export type {
   OldProjectsProps,
   OldProjectItem,
   CareerProps,
-  CareerItem
+  CareerItem,
+  FormProps,
+  FormFieldProps,
 };

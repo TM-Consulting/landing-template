@@ -1,3 +1,70 @@
+const formMapper = [
+  {
+    id: "name",
+    order: 1,
+    type: "text",
+    required: true,
+    placeholder: "Enter your name",
+    minlength: 2,
+  },
+  {
+    id: "email",
+    order: 2,
+    type: "email",
+    required: true,
+    placeholder: "Enter your email",
+  },
+
+  {
+    id: "message",
+    order: 7,
+    type: "textarea",
+    required: false,
+    placeholder: "Enter your message",
+    minlength: 20,
+  },
+];
+const contactFormMapper = [
+  ...formMapper,
+  {
+    id: "subject",
+    type: "text",
+    order: 3,
+    required: false,
+    placeholder: "Enter the subject",
+    fullWidth: true,
+    minlength: 5,
+  },
+];
+
+const candidatureFormMapper = [
+  ...formMapper,
+
+  {
+    id: "city",
+    order: 4,
+    type: "text",
+    required: false,
+    placeholder: "Enter the city",
+    minlength: 2,
+  },
+  {
+    id: "phone",
+    order: 5,
+    type: "text",
+    required: false,
+    placeholder: "Enter your phone number",
+    minlength: 9,
+  },
+  {
+    id: "resume",
+    order: 6,
+    type: "file",
+    required: false,
+    placeholder: "Enter your email",
+    fullWidth: true,
+  },
+];
 const commonContainers = {
   services: {
     title: "Services",
@@ -297,7 +364,9 @@ const siteData = {
           header: "Contact Us",
           title: "Please Feel Free To Contact Us",
           form: {
-            placeholders: {},
+            fields: [...contactFormMapper],
+            buttonTitle: "Send Message",
+            errorMessage: "Please fill all the required fields correctly",
           },
           contactInfos: [
            {
