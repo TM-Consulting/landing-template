@@ -10,4 +10,12 @@
     flex-wrap: nowrap !important;
     gap: 15px;
   }
+  .career-stage {
+    flex-wrap: wrap !important;
+    gap: 15px;
+    justify-content: flex-start !important;
+  }
+  .career-stage .owl-item {
+    width: 32%;
+  }
 }

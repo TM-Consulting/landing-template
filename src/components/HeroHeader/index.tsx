@@ -13,10 +13,10 @@ const index = (props: HeroHeaderProps) => {
     >
       <style
         dangerouslySetInnerHTML={{
-          __html: ` p.text-white,
-          .text-center h1,
-           .text-center a,
-            .text-center i {
+          __html: ` .hero-header p.text-white,
+          .hero-header .text-center h1,
+          .hero-header .text-center a,
+          .hero-header .text-center i {
                 color: ${color} !important;
               }
         `,

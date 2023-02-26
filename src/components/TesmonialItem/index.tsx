@@ -1,11 +1,11 @@
-import { testimonialItem } from "../../utils/types";
+import { TestimonialItem } from "../../utils/types";
 
 const index = ({
   image,
   description,
   clientName,
   profession,
-}: testimonialItem) => {
+}: TestimonialItem) => {
   return (
     <div className="owl-item">
       <div className="text-center pb-4">
