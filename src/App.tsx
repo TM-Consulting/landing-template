@@ -29,10 +29,6 @@ function App() {
           <Route exact path="/services">
             <Services containers={siteData.pages.services.containers} />
           </Route>
-          <Route exact path="/services">
-            <Services containers={siteData.pages.services.containers} />
-          </Route>
-
           <Route exact path="/contact">
             <Contact containers={siteData.pages.contact.containers} />
           </Route>
