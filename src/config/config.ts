@@ -268,7 +268,6 @@ const siteData = {
         },
       },
     },
-
     services: {
       containers: {
         hero: {
@@ -284,7 +283,6 @@ const siteData = {
         testmonial: { ...commonContainers.testmonial },
       },
     },
-
     contact: {
       containers: {
         hero: {
@@ -301,23 +299,26 @@ const siteData = {
           form: {
             placeholders: {},
           },
-          contactInfos: {
-            address: {
+          contactInfos: [
+           {
               title: "Our Office",
               value: "123 Street, New York, USA",
+              type: "geo-alt",
             },
-            email: {
+            {
               title: "Email Us",
               value: "moad@testmail.com",
+              type: "envelope-open",
             },
-            phone: {
+            {
               title: "Call Us",
               value: "+012 345 6789",
+              type: "phone-vibrate",
             },
+          ]
           },
         },
       },
-    },
     career: {
       containers: {
         hero: {

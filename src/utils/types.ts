@@ -121,8 +121,26 @@ interface HeroHeaderProps {
   bgImage?: string;
   color?: string;
 }
+interface ContactFormProps {
+  input: string;
+}
+interface ContactElementProps {
+  title: string;
+  value: string;
+  type: string;
+}
+interface ContactProps {
+  header: string;
+  title: string,
+  form: ContactFormProps;
+  contactInfos: ContactElementProps []
+
+}
+
 export type {
   NavItemProps,
+  ContactProps,
+  ContactFormProps,
   CarouselItemProps,
   HeaderProps,
   CarouselProps,
