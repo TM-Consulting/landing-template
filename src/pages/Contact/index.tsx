@@ -1,13 +1,11 @@
-import Form from "../../components/Form";
 import HeroHeader from "../../components/HeroHeader";
-import ContactInfoItem from "../../components/ContactInfoItem";
+import ContactUs from "../../containers/ContactUs";
 
 const index = (props: any) => {
   return (
     <>
       <HeroHeader {...props?.containers?.hero} />
-      <ContactInfoItem {...props?.containers?.contact}/>
-      <Form {...props?.containers?.contact.form} />
+      <ContactUs {...props?.containers?.contact} />
     </>
   );
 };
