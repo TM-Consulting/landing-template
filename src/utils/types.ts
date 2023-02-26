@@ -102,16 +102,27 @@ interface aboutProps {
   certificates?: string;
 }
 
-interface testimonialItem {
+interface TestimonialItem {
   image: string;
   description: string;
   clientName?: string;
   profession?: string;
 }
-interface testimonialProps {
+interface TestimonialProps {
   header: string;
   title: string;
-  items: testimonialItem[];
+  items: TestimonialItem[];
+}
+
+interface CareerItem {
+  image: string;
+  title: string;
+  description: string;
+}
+interface CareerProps {
+  header: string;
+  title: string;
+  items: CareerItem[];
 }
 interface HeroHeaderProps {
   title: string;
@@ -147,8 +158,8 @@ export type {
   aboutProps,
   ServiceItemProps,
   ServiceProps,
-  testimonialProps,
-  testimonialItem,
+  TestimonialProps,
+  TestimonialItem,
   FooterProps,
   CopyrightProps,
   LinksItemProps,
@@ -158,4 +169,6 @@ export type {
   HeroHeaderProps,
   OldProjectsProps,
   OldProjectItem,
+  CareerProps,
+  CareerItem
 };

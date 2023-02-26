@@ -1,7 +1,7 @@
-import TesmonialItem from "../../components/TesmonialItem";
-import { TestimonialProps } from "../../utils/types";
+import CareerItem from "../../components/CareerItem";
+import { CareerProps } from "../../utils/types";
 
-const index = ({ header, title, items }: TestimonialProps) => {
+const index = ({ header, title, items }: CareerProps) => {
   if (!items) return <></>;
   return (
     <div
@@ -26,7 +26,7 @@ const index = ({ header, title, items }: TestimonialProps) => {
         <div className="owl-carousel testimonial-carousel owl-loaded owl-drag">
           <div className="owl-stage-outer">
             <div
-              className="owl-stage"
+              className="owl-stage career-stage"
               style={{
                 display: "flex",
                 justifyContent: "space-between",
@@ -34,7 +34,7 @@ const index = ({ header, title, items }: TestimonialProps) => {
               }}
             >
               {items.map((item, index) => (
-                <TesmonialItem key={index} {...item} />
+                <CareerItem key={index} {...item} />
               ))}
             </div>
           </div>

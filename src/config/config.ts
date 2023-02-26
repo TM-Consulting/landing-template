@@ -329,6 +329,42 @@ const siteData = {
           description:
             " Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.",
         },
+        career: {
+          header: "What excites you?",
+          title: "Build your future with us",
+          items: [
+            {
+              image: "testimonial-1.jpg",
+              title: "Data engineer",
+              description:
+                "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
+            },
+            {
+              image: "testimonial-1.jpg",
+              title: "Data engineer",
+              description:
+                "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
+            },
+            {
+              image: "testimonial-1.jpg",
+              title: "Data engineer",
+              description:
+                "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
+            },
+            {
+              image: "testimonial-1.jpg",
+              title: "Data engineer",
+              description:
+                "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
+            },
+            {
+              image: "testimonial-1.jpg",
+              title: "Data engineer",
+              description:
+                "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
+            },
+          ],
+        },
       },
     },
   },
