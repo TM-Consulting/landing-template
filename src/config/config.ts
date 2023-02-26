@@ -240,6 +240,9 @@ const siteData = {
           child: { text: "About", url: "about" },
           parent: { text: "Home", url: "home" },
           bgImage: "carousel-2.jpg",
+          description:
+            " Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.",
+          color: "blue",
         },
         about: { ...commonContainers.about },
         oldProjects: {
@@ -273,6 +276,9 @@ const siteData = {
           child: { text: "Services", url: "services" },
           parent: { text: "Home", url: "home" },
           bgImage: "carousel-1.jpg",
+          description:
+            " Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.",
+          color: "#000000",
         },
         services: { ...commonContainers.services },
         testmonial: { ...commonContainers.testmonial },
@@ -286,6 +292,8 @@ const siteData = {
           child: { text: "Contact", url: "contact" },
           parent: { text: "Home", url: "home" },
           bgImage: "carousel-2.jpg",
+          description:
+            " Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.",
         },
         contact: {
           header: "Contact Us",
@@ -317,6 +325,8 @@ const siteData = {
           child: { text: "Career", url: "career" },
           parent: { text: "Home", url: "home" },
           bgImage: "carousel-3.jpg",
+          description:
+            " Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.",
         },
       },
     },

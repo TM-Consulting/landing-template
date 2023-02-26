@@ -117,7 +117,9 @@ interface HeroHeaderProps {
   title: string;
   child: { text: string; url: string };
   parent: { text: string; url: string };
+  description?: string;
   bgImage?: string;
+  color?: string;
 }
 export type {
   NavItemProps,
