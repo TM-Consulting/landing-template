@@ -1,6 +1,6 @@
 import { ContactProps } from "../../utils/types";
 import Iframe from "react-iframe";
-const index = ({ contactInfos }: ContactProps) => {
+const index = ({ contactInfos, mapsurl }: ContactProps) => {
   return (
     <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div className="container">
@@ -21,14 +21,14 @@ const index = ({ contactInfos }: ContactProps) => {
 
               <div>
                 <Iframe
-                  url="https:////www.google.com/maps/embed/v1/place?key=AIzaSyB54yZs0KUa3ip6ecUpLsfatKOFjc7XyME&q=63+rue+du+lieutenant+colonnel+prudhon+Argenteuil+95100"
+                  url= {mapsurl}
                   width="640px"
                   height="230px"
                   id=""
                   className="position-relative w-100"
                   display="block"
                   position="relative"
-                />
+                  />
               </div>
             </div>
           </div>

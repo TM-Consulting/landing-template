@@ -144,8 +144,8 @@ interface ContactProps {
   header: string;
   title: string,
   form: ContactFormProps;
-  contactInfos: ContactElementProps []
-
+  contactInfos: ContactElementProps [];
+  mapsurl: string
 }
 
 export type {
