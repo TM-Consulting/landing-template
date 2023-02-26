@@ -369,7 +369,7 @@ const siteData = {
             errorMessage: "Please fill all the required fields correctly",
           },
           contactInfos: [
-           {
+            {
               title: "Our Office",
               value: "123 Street, New York, USA",
               type: "geo-alt",
@@ -386,10 +386,11 @@ const siteData = {
             },
           ],
           // Please make sure u replace all special characters on the address with space.
-          mapsurl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.521983217593!2d2.245076015892132!3d48.90544650534591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e665af7d5d13cb%3A0x46e391172dc35df6!2s67%20Rue%20de%20l%20Aigle%2C%2092250%20La%20Garenne-Colombes!5e0!3m2!1sen!2sfr!4v1677418384480!5m2!1sen!2sfr"
-          },
+          mapsurl:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.521983217593!2d2.245076015892132!3d48.90544650534591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e665af7d5d13cb%3A0x46e391172dc35df6!2s67%20Rue%20de%20l%20Aigle%2C%2092250%20La%20Garenne-Colombes!5e0!3m2!1sen!2sfr!4v1677418384480!5m2!1sen!2sfr",
         },
       },
+    },
     career: {
       containers: {
         hero: {
@@ -422,19 +423,16 @@ const siteData = {
               description:
                 "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
             },
-            {
-              image: "testimonial-1.jpg",
-              title: "Data engineer",
-              description:
-                "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
-            },
-            {
-              image: "testimonial-1.jpg",
-              title: "Data engineer",
-              description:
-                "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
-            },
           ],
+        },
+        candidature: {
+          header: "Candidature spontané",
+          title: "Apply to our upcoming offers",
+          form: {
+            fields: [...candidatureFormMapper],
+            buttonTitle: "Send Message",
+            errorMessage: "Please fill all the required fields correctly",
+          },
         },
       },
     },

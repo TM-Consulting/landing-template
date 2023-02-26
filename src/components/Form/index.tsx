@@ -61,7 +61,7 @@ const formValidation = (fields: any, formValues: any) => {
 const Form = (props: FormProps) => {
   const { fields, buttonTitle, errorMessage } = props;
   let generateStateKeys = {} as any;
-  fields.forEach((item: any) => {
+  fields?.forEach((item: any) => {
     generateStateKeys[item.id] = "";
   });
 
@@ -81,7 +81,7 @@ const Form = (props: FormProps) => {
   const formBuilder = () => (
     <div className="row g-3">
       {fields
-        .sort((a, b) => a.order - b?.order)
+        ?.sort((a, b) => a.order - b?.order)
         .map((item, index) => {
           let ComponentToRender = Input;
           if (item.type === "textarea") ComponentToRender = TextArea;
@@ -96,7 +96,7 @@ const Form = (props: FormProps) => {
         })}
     </div>
   );
-  if (!props) return <></>;
+  if (!props || !Object.keys(props)?.length) return <></>;
   return (
     <div className="bg-light rounded p-5">
       <form>
@@ -104,9 +104,13 @@ const Form = (props: FormProps) => {
           {formBuilder()}
           <div className="col-12">
             {error && (
-              <p style={{ color: "red" }} className="text-center">
-                {errorMessage}
-              </p>
+              <p
+                style={{ color: "red" }}
+                className="text-center"
+                dangerouslySetInnerHTML={{
+                  __html: ` ${errorMessage}`,
+                }}
+              />
             )}
             <button
               className="btn btn-primary w-100 py-3"

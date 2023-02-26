@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const index = (props: HeroHeaderProps) => {
   const { title, child, parent, bgImage, description, color } = props;
-  if (!props) return <></>;
+  if (!props || !Object.keys(props)?.length) return <></>;
   return (
     <div
       className="container-fluid bg-primary p-5 hero-header mb-5"

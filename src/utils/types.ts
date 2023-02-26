@@ -139,10 +139,10 @@ interface ContactElementProps {
 }
 interface ContactProps {
   header: string;
-  title: string,
+  title: string;
   form: FormProps;
-  contactInfos: ContactElementProps [];
-  mapsurl: string
+  contactInfos: ContactElementProps[];
+  mapsurl: string;
 }
 
 interface FormFieldProps {
@@ -158,6 +158,12 @@ interface FormProps {
   fields: FormFieldProps[];
   buttonTitle: string;
   errorMessage: string;
+}
+
+interface CandidatureProps {
+  header: string;
+  title: string;
+  form: FormProps;
 }
 export type {
   NavItemProps,
@@ -183,4 +189,5 @@ export type {
   CareerItem,
   FormProps,
   FormFieldProps,
+  CandidatureProps,
 };

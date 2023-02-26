@@ -4,7 +4,7 @@ import { ContactProps } from "../../utils/types";
 
 const index = (props: ContactProps) => {
   const { header, title, form } = props;
-  if (!props) return <></>;
+  if (!props || !Object.keys(props)?.length) return <></>;
   return (
     <div
       className="container-fluid py-5 wow fadeInUp"
