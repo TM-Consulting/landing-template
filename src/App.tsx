@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import Header from "./layouts/Header";
 import Footer from "./layouts/Footer";
 import Copyright from "./layouts/Copyright";
@@ -10,6 +10,29 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Career from "./pages/Career";
+const routes: any = {
+  home: Home,
+  about: About,
+  services: Services,
+  career: Career,
+  contact: Contact,
+};
+const Routes = () => (
+  <>
+    {siteData.header?.navLinks?.map((item) => {
+      let Component = routes[item.url];
+      if (item.show)
+        return (
+          <Route exact path={`/${item.url}`}>
+            <Component
+              containers={(siteData as any).pages[item.url].containers}
+            />
+          </Route>
+        );
+      return <></>;
+    })}
+  </>
+);
 function App() {
   return (
     <>
@@ -20,22 +43,7 @@ function App() {
           <Route exact path="/">
             <Home containers={siteData.pages.home.containers} />
           </Route>
-          <Route exact path="/home">
-            <Home containers={siteData.pages.home.containers} />
-          </Route>
-          <Route exact path="/about">
-            <About containers={siteData.pages.about.containers} />
-          </Route>
-          <Route exact path="/services">
-            <Services containers={siteData.pages.services.containers} />
-          </Route>
-          <Route exact path="/contact">
-            <Contact containers={siteData.pages.contact.containers} />
-          </Route>
-
-          <Route exact path="/career">
-            <Career containers={siteData.pages.career.containers} />
-          </Route>
+          <Routes />
         </Switch>
 
         <Footer {...siteData.footer} />
