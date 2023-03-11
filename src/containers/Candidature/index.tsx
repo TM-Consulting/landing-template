@@ -1,4 +1,5 @@
 import Form from "../../components/Form";
+import { emailTypes } from "../../utils/constants";
 import { CandidatureProps } from "../../utils/types";
 
 const index = ({ header, title, form }: CandidatureProps) => {
@@ -33,7 +34,7 @@ const index = ({ header, title, form }: CandidatureProps) => {
                 flexWrap: "wrap",
               }}
             >
-              <Form {...form} />
+              <Form {...form} type={emailTypes.apply} />
             </div>
           </div>
         </div>

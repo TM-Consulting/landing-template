@@ -1,5 +1,6 @@
 import ContactInfoItem from "../../components/ContactInfoItem";
 import Form from "../../components/Form";
+import { emailTypes } from "../../utils/constants";
 import { ContactProps } from "../../utils/types";
 
 const index = (props: ContactProps) => {
@@ -35,7 +36,7 @@ const index = (props: ContactProps) => {
               animationName: "fadeInUp",
             }}
           >
-            <Form {...form} />
+            <Form {...form} type={emailTypes.contact} />
           </div>
           <div
             className="col-lg-5 wow slideInUp"

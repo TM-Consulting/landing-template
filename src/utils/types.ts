@@ -158,6 +158,8 @@ interface FormProps {
   fields: FormFieldProps[];
   buttonTitle: string;
   errorMessage: string;
+  type: string;
+  sweetMessages: any;
 }
 
 interface CandidatureProps {

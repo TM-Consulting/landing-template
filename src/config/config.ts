@@ -57,7 +57,7 @@ const candidatureFormMapper = [
     minlength: 9,
   },
   {
-    id: "resume",
+    id: "file",
     order: 6,
     type: "file",
     required: false,
@@ -131,6 +131,15 @@ const commonContainers = {
       },
     ],
   },
+};
+const contactInfo = {
+  companyAddress: "63 rue du lieutenant colonel prudhon, Argenteuil 95100",
+  phoneNumber: "+33 7 58 59 75 95",
+  emailAddress: "monaim.touinssi.france@gmail.com",
+};
+const sweetMessages = {
+  success: "L'email a bien été envoyé.",
+  error: "L'email n'a pas bien envoyé, merci d'essayer à nouveau.",
 };
 const siteData = {
   header: {
@@ -212,9 +221,7 @@ const siteData = {
     ],
     contactinfo: {
       title: "Get In Touch",
-      companyAddress: "63 rue du lieutenant colonel prudhon, Argenteuil 95100",
-      phoneNumber: "+33 7 58 59 75 95",
-      emailAddress: "mikou.mouad.mail@gmail.com",
+      ...contactInfo,
     },
     socialmedialinks: {
       title: "Follow Us",
@@ -367,27 +374,27 @@ const siteData = {
             fields: [...contactFormMapper],
             buttonTitle: "Send Message",
             errorMessage: "Please fill all the required fields correctly",
+            sweetMessages: sweetMessages,
           },
           contactInfos: [
             {
               title: "Our Office",
-              value: "123 Street, New York, USA",
+              value: contactInfo.companyAddress,
               type: "geo-alt",
             },
             {
               title: "Email Us",
-              value: "moad@testmail.com",
+              value: contactInfo.emailAddress,
               type: "envelope-open",
             },
             {
               title: "Call Us",
-              value: "+012 345 6789",
+              value: contactInfo.phoneNumber,
               type: "phone-vibrate",
             },
           ],
           // Please make sure u replace all special characters on the address with space.
-          address:
-            "'s-Hertogenbosch, Netherlands",
+          address: contactInfo.companyAddress,
         },
       },
     },
@@ -432,6 +439,7 @@ const siteData = {
             fields: [...candidatureFormMapper],
             buttonTitle: "Send Message",
             errorMessage: "Please fill all the required fields correctly",
+            sweetMessages: sweetMessages,
           },
         },
       },
@@ -439,4 +447,4 @@ const siteData = {
   },
 };
 
-export { siteData };
+export { siteData, contactInfo };

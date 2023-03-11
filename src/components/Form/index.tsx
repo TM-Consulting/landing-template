@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import { FormProps, FormFieldProps } from "../../utils/types";
 import { validate } from "email-validator";
-
+import { contactInfo } from "../../config/config";
+import { genericPostPutRequests } from "../../utils/requests";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+import { emailTypes } from "../../utils/constants";
+const MySwal = withReactContent(Swal);
 const Input = ({
   id,
   type,
@@ -10,7 +15,7 @@ const Input = ({
   fullWidth,
   value,
   onChange,
-}: FormFieldProps & { value: string; onChange: (e: any) => void }) => {
+}: FormFieldProps & { value?: string; onChange: (e: any) => void }) => {
   return (
     <div className={`col-${fullWidth ? "12" : "6"}`}>
       <input
@@ -33,7 +38,7 @@ const TextArea = ({
   placeholder,
   value,
   onChange,
-}: FormFieldProps & { value: string; onChange: (e: any) => void }) => {
+}: FormFieldProps & { value?: string; onChange: (e: any) => void }) => {
   return (
     <div className={`col-12`}>
       <textarea
@@ -59,7 +64,7 @@ const formValidation = (fields: any, formValues: any) => {
   return error;
 };
 const Form = (props: FormProps) => {
-  const { fields, buttonTitle, errorMessage } = props;
+  const { fields, buttonTitle, errorMessage, type, sweetMessages } = props;
   let generateStateKeys = {} as any;
   fields?.forEach((item: any) => {
     generateStateKeys[item.id] = "";
@@ -67,16 +72,57 @@ const Form = (props: FormProps) => {
 
   const [formValues, setFormValues] = useState<any>(generateStateKeys);
   const [error, setError] = useState<boolean>(false);
+  const [errorMsg, setErrormsg] = useState<string>(errorMessage);
+  const [file, setFile] = useState<File>();
+
+  const handleFileChange = (e: any) => {
+    if (e.target.files) {
+      setFile(e.target.files[0]);
+    }
+  };
 
   const handleChange = (event: any) => {
     const newFormValues = { ...formValues };
-    newFormValues[event.target.id] = event.target.value;
+    if (event.target.type === "file" && event.target.files)
+      newFormValues[event.target.id] = event.target.files[0];
+    else newFormValues[event.target.id] = event.target.value;
     setFormValues(newFormValues);
     setError(false);
   };
   const handleClick = (e: any) => {
     e.preventDefault();
-    if (formValidation(fields, formValues)) setError(true);
+    if (formValidation(fields, formValues)) {
+      setError(true);
+      return;
+    }
+    const formData = new FormData();
+    formData.append("clientEmail", contactInfo.emailAddress);
+    formData.append("type", type);
+    Object.keys(formValues).forEach((item) => {
+      formData.append(`${item}`, formValues[item]);
+    });
+    type === emailTypes.apply && file && formData.append("file", file);
+
+    genericPostPutRequests({ data: formData })
+      .then((res) => {
+        MySwal.fire({
+          title: <strong>{sweetMessages.success}</strong>,
+          html: <></>,
+          icon: "success",
+        });
+        setFormValues(generateStateKeys);
+        setFile(undefined);
+      })
+      .catch((err) => {
+        MySwal.fire({
+          title: <strong>{sweetMessages?.error}</strong>,
+          html: <></>,
+          icon: "error",
+        });
+      });
+    // for (const [key, value] of formData.entries()) {
+    //   console.log(`hehehe ${key}: ${formData.entries()}`);
+    // }
   };
   const formBuilder = () => (
     <div className="row g-3">
@@ -85,6 +131,8 @@ const Form = (props: FormProps) => {
         .map((item, index) => {
           let ComponentToRender = Input;
           if (item.type === "textarea") ComponentToRender = TextArea;
+          if (item.type === "file")
+            return <ComponentToRender {...item} onChange={handleFileChange} />;
 
           return (
             <ComponentToRender
@@ -108,7 +156,7 @@ const Form = (props: FormProps) => {
                 style={{ color: "red" }}
                 className="text-center"
                 dangerouslySetInnerHTML={{
-                  __html: ` ${errorMessage}`,
+                  __html: ` ${errorMsg}`,
                 }}
               />
             )}
