@@ -1,9 +1,9 @@
 import { ContactProps } from "../../utils/types";
 import Iframe from "react-iframe";
-const index = ({ contactInfos, mapsurl }: ContactProps) => {
+const index = ({ contactInfos, address }: ContactProps) => {
   return (
     <div className="bg-light rounded p-5">
-      {contactInfos.map((item, index) => (
+      {contactInfos.map(item => (
         <div className="d-flex align-items-center mb-2">
           <i className={`bi bi-${item.type} fs-1 text-primary me-3`}></i>
           <div className="text-start">
@@ -15,7 +15,7 @@ const index = ({ contactInfos, mapsurl }: ContactProps) => {
 
       <div>
         <Iframe
-          url={mapsurl}
+          url= {"https://www.google.com/maps/embed/v1/place?key=AIzaSyB54yZs0KUa3ip6ecUpLsfatKOFjc7XyME&q="+address.replace(" ", "+").replace(",", "+")}
           width="640px"
           height="252px"
           id=""

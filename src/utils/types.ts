@@ -142,7 +142,7 @@ interface ContactProps {
   title: string;
   form: FormProps;
   contactInfos: ContactElementProps[];
-  mapsurl: string;
+  address: string;
 }
 
 interface FormFieldProps {
