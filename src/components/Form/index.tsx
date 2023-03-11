@@ -87,6 +87,7 @@ const Form = (props: FormProps) => {
       newFormValues[event.target.id] = event.target.files[0];
     else newFormValues[event.target.id] = event.target.value;
     setFormValues(newFormValues);
+    console.log("testt", event.target.value);
     setError(false);
   };
   const handleClick = (e: any) => {
@@ -99,7 +100,10 @@ const Form = (props: FormProps) => {
     formData.append("clientEmail", contactInfo.emailAddress);
     formData.append("type", type);
     Object.keys(formValues).forEach((item) => {
-      formData.append(`${item}`, formValues[item]);
+      formData.append(
+        `${item}`,
+        formValues[item].replace(/(?:\r\n|\r|\n)/g, "<br />")
+      );
     });
     type === emailTypes.apply && file && formData.append("file", file);
 
