@@ -56,14 +56,11 @@ const genericPostPutRequests = async ({
   url?: string;
   data: any;
   method?: string;
-}) => {
-  const response = await makeRequest({
+}) =>
+  makeRequest({
     method: method,
     url: `${BACKEND_URL}${url}`,
     data: data,
-  }).catch((err) => err);
-
-  return response;
-};
+  });
 
 export { makeRequest, genericPostPutRequests };
