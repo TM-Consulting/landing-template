@@ -74,10 +74,10 @@ const commonContainers = {
     items: [
       {
         icon: "flaticon-cctv",
-        group: "Group1",
-        service: "Service1",
+        group: "Multi-Cloud",
+        service: "Environment Lifecycle",
         description:
-          "This is the first service served by the company on the groupo group1",
+          "Our teams provide a full cloud lifecycle services. From designing the environment, to setting up and creating resources, passing by designing target architecture for specific apps.",
         readmore: "Read More",
       },
       {
@@ -100,10 +100,10 @@ const commonContainers = {
   },
   about: {
     title: "About US",
-    titleOffer: "We Offers Quality CCTV Systems & Services",
+    titleOffer: "We Offer Cloud and K8S consultancy services",
     description:
-      "Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet et magna",
-    yearsOfExp: "15 Years Experience",
+      "Our consultants are experts in cloud computing platforms such as Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform, as well as container technologies like Kubernetes. They are able to provide customized solutions that help organizations leverage the benefits of cloud computing and containerization, such as improved scalability, flexibility, and cost savings.",
+    yearsOfExp: "6 Years Experience",
     certificates: "10 Certificates",
   },
   testmonial: {
@@ -113,14 +113,14 @@ const commonContainers = {
       {
         image: "testimonial-1.jpg",
         description:
-          "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
+          "MIT Consulting helped us migrate our workloads from on-premises to Azure Cloud environment.",
         clientName: "ATJ",
         profession: "Product Owner",
       },
       {
         image: "testimonial-2.jpg",
         description:
-          "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
+          "MIT Consulting assisted us on our first Cloud Native experiende. They assisted us on defining the target arhcitecture, the Azure services to be used, and also the standards and best practices for every service.",
         clientName: "ATJ",
         profession: "Product Owner",
       },
@@ -135,7 +135,7 @@ const commonContainers = {
   },
 };
 const contactInfo = {
-  companyAddress: "63 rue du lieutenant colonel prudhon, Argenteuil 95100",
+  companyAddress: "26 rue Bosquet 75007 Paris",
   phoneNumber: "+33 7 58 59 75 95",
   emailAddress: "mmikou@mitconsulting.fr",
   lang: "en",
@@ -181,7 +181,7 @@ const siteData = {
         title: 'Contact Us',
       },
     ],
-    phoneNumber: "+21266677898",
+    phoneNumber: "+33758597595",
     phoneBgColor: "bg-secondary",
     companyName: { fPart: companyName.split(" ")[0], lPart: companyName.split(" ").slice(1).join(" ") },
   },
@@ -243,7 +243,7 @@ const siteData = {
         },
         {
           provider: "facebook",
-          link: "https://www.facebook.com/",
+          link: "",
         },
         {
           provider: "linkedin",
@@ -258,7 +258,7 @@ const siteData = {
   },
   copyright: {
     companyName: companyName,
-    producerName: "Tounissi Edition",
+    producerName: "TM Hosting",
     producerLink: "https://www.linkedin.com/in/monaim-touinssi/",
     mention: ". All Rights Reserved.",
     designedby: "Designed by",
@@ -271,8 +271,8 @@ const siteData = {
           items: [
             {
               image: "carousel-1.jpg",
-              title: "Safe & Secure Home 1",
-              subTitle: "BEST SECURITY SERVICES",
+              title: "Multi-Cloud",
+              subTitle: "Strategic Design, Migration, FinOps, Maintenance & Monitoring",
               buttons: [
                 { url: "services", text: "Services" },
                 { url: "contact", text: "Contact Us" },
@@ -280,8 +280,8 @@ const siteData = {
             },
             {
               image: "carousel-2.jpg",
-              title: "Safe & Secure Home 2",
-              subTitle: "BEST SECURITY SERVICES",
+              title: "Kubernetes/Compute",
+              subTitle: "Cluster Design, Workloads Migration, Monitoring & Maintenance",
               buttons: [
                 { url: "services", text: "Services" },
                 { url: "contact", text: "Contact Us" },
@@ -289,26 +289,17 @@ const siteData = {
             },
             {
               image: "carousel-3.jpg",
-              title: "Safe & Secure Home 3",
-              subTitle: "BEST SECURITY SERVICES",
+              title: "DevOps",
+              subTitle: "IaC Development, Pipelines, Deployment, Monitoring",
               buttons: [
                 { url: "services", text: "Services" },
                 { url: "about", text: "About Us" },
               ],
             },
             {
-              image: "carousel-1.jpg",
-              title: "Safe & Secure Home 4",
-              subTitle: "BEST SECURITY SERVICES",
-              buttons: [
-                { url: "services", text: "Services" },
-                { url: "about", text: "About Us" },
-              ],
-            },
-            {
-              image: "carousel-3.jpg",
-              title: "Safe & Secure Home 5",
-              subTitle: "BEST SECURITY SERVICES",
+              image: "carousel-4.jpg",
+              title: "WebDev",
+              subTitle: "Custom web development, Web design, WebApps maintenance & support",
               buttons: [
                 { url: "services", text: "Services" },
                 { url: "about", text: "About Us" },
@@ -326,10 +317,10 @@ const siteData = {
           title: "About Us",
           child: { text: "About", url: "about" },
           parent: { text: "Home", url: "home" },
-          bgImage: "carousel-2.jpg",
+          bgImage: "About-Us.jpg",
           description:
-            " Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.",
-          color: "blue",
+            "This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.",
+          color: "#ffffff",
         },
         about: { ...commonContainers.about },
         oldProjects: {
@@ -337,9 +328,9 @@ const siteData = {
           title: "Please check our old projects",
           items: [
             {
-              name: "ATJ",
+              name: "Cloud Native Pricing Platform",
               image: "team-1.jpg",
-              description: " rojoula had khouna ajiw 3Ndu",
+              description: "Cloud native development of an online exposed pricing platform",
             },
             {
               name: "Moad",
@@ -365,7 +356,7 @@ const siteData = {
           bgImage: "carousel-1.jpg",
           description:
             " Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.",
-          color: "#000000",
+          color: "#ffffff",
         },
         services: { ...commonContainers.services },
         testmonial: { ...commonContainers.testmonial },
@@ -378,9 +369,10 @@ const siteData = {
           title: "Contact Us",
           child: { text: "Contact", url: "contact" },
           parent: { text: "Home", url: "home" },
-          bgImage: "carousel-2.jpg",
+          bgImage: "contact.jpg",
           description:
             " Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.",
+          color: "#ffffff",
         },
         contact: {
           header: "Contact Us",
@@ -423,6 +415,7 @@ const siteData = {
           bgImage: "carousel-3.jpg",
           description:
             " Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.",
+          color: "#ffffff",
         },
         career: {
           header: "What excites you?",
