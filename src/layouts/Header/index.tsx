@@ -3,6 +3,8 @@ import NavItem from "./NavItem";
 
 import Logo from "../../config/images/logo.png";
 import { HeaderProps } from "../../utils/types";
+import { Helmet } from "react-helmet";
+
 
 const Header = ({
   companyName,
@@ -12,11 +14,15 @@ const Header = ({
 }: HeaderProps) => {
   let location = useLocation();
   return (
+
     <nav className="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0 sticky-top">
       <div
         className="display-5 m-0 text-primary ms-lg-5"
         style={{ display: "flex", alignItems: "center" }}
       >
+        <Helmet>
+        <title>{`${companyName.fPart} ${companyName.lPart}` + ' | ' + navLinks?.find(item=>item.url===window.location.pathname.split('/')[1])?.title ||navLinks?.find(item=>item.url==='home')?.title }</title>
+      </Helmet>
         <Link to={"home"} className={`navbar-brand `}>
           <img src={Logo} alt="" style={{ width: "70px" }} />
         </Link>

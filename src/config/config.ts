@@ -1,3 +1,5 @@
+import Header from "../layouts/Header";
+
 const formMapper = [
   {
     id: "name",
@@ -135,12 +137,15 @@ const commonContainers = {
 const contactInfo = {
   companyAddress: "63 rue du lieutenant colonel prudhon, Argenteuil 95100",
   phoneNumber: "+33 7 58 59 75 95",
-  emailAddress: "monaim.touinssi.france@gmail.com",
+  emailAddress: "mmikou@mitconsulting.fr",
 };
 const sweetMessages = {
   success: "L'email a bien été envoyé.",
   error: "L'email n'a pas bien envoyé, merci d'essayer à nouveau.",
 };
+
+const companyName = "MIT Consulting"
+
 const siteData = {
   header: {
     navLinks: [
@@ -148,31 +153,36 @@ const siteData = {
         url: "home",
         text: "Home",
         show: true,
+        title: 'Home',
       },
       {
         url: "about",
         text: "About",
         show: true,
+        title: 'About Us',
       },
       {
         url: "services",
         text: "Services",
         show: true,
+        title: 'Services',
       },
       {
         url: "career",
         text: "Career",
         show: true,
+        title: 'Career',
       },
       {
         url: "contact",
         text: "Contact",
         show: true,
+        title: 'Contact Us',
       },
     ],
     phoneNumber: "+21266677898",
     phoneBgColor: "bg-secondary",
-    companyName: { fPart: "hello", lPart: "blabla" },
+    companyName: { fPart: companyName.split(" ")[0], lPart: companyName.split(" ").slice(1).join(" ") },
   },
   footer: {
     pagelinks: [
@@ -246,7 +256,7 @@ const siteData = {
     },
   },
   copyright: {
-    companyName: "MIT Consulting",
+    companyName: companyName,
     producerName: "Tounissi Edition",
     producerLink: "https://www.linkedin.com/in/monaim-touinssi/",
     mention: ". All Rights Reserved.",
@@ -254,6 +264,7 @@ const siteData = {
   },
   pages: {
     home: {
+      pageTitle: "Home",
       containers: {
         carousel: {
           items: [
@@ -308,6 +319,7 @@ const siteData = {
       },
     },
     about: {
+      pageTitle: "About",
       containers: {
         hero: {
           title: "About Us",
@@ -343,6 +355,7 @@ const siteData = {
       },
     },
     services: {
+      pageTitle: "Services",
       containers: {
         hero: {
           title: "Services",
@@ -358,6 +371,7 @@ const siteData = {
       },
     },
     contact: {
+      pageTitle: "Contact Us",
       containers: {
         hero: {
           title: "Contact Us",
@@ -399,6 +413,7 @@ const siteData = {
       },
     },
     career: {
+      pageTitle: "Career",
       containers: {
         hero: {
           title: "Career",

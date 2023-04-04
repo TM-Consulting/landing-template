@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Career from "./pages/Career";
+
 const routes: any = {
   home: Home,
   about: About,
@@ -25,7 +26,7 @@ const Routes = () => (
         return (
           <Route exact path={`/${item.url}`}>
             <Component
-              containers={(siteData as any).pages[item.url].containers}
+              {...(siteData as any).pages[item.url]}
             />
           </Route>
         );
