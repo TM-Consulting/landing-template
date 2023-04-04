@@ -21,7 +21,8 @@ const Header = ({
         style={{ display: "flex", alignItems: "center" }}
       >
         <Helmet>
-        <title>{`${companyName.fPart} ${companyName.lPart}` + ' | ' + navLinks?.find(item=>item.url===window.location.pathname.split('/')[1])?.title ||navLinks?.find(item=>item.url==='home')?.title }</title>
+        <meta charSet="utf-8" />
+        <title>{`${companyName.fPart} ${companyName.lPart}` + ' | ' + (navLinks?.find(item=>item.url===window.location.pathname.split('/')[1])?.title || navLinks?.find(item=>item.url==='home')?.title) }</title>
       </Helmet>
         <Link to={"home"} className={`navbar-brand `}>
           <img src={Logo} alt="" style={{ width: "70px" }} />
