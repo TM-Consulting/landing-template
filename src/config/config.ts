@@ -138,6 +138,7 @@ const contactInfo = {
   companyAddress: "63 rue du lieutenant colonel prudhon, Argenteuil 95100",
   phoneNumber: "+33 7 58 59 75 95",
   emailAddress: "mmikou@mitconsulting.fr",
+  lang: "en",
 };
 const sweetMessages = {
   success: "L'email a bien été envoyé.",
