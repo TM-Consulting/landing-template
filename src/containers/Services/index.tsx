@@ -5,7 +5,7 @@ const index = ({ title, description, items }: ServiceProps) => {
   if (!items) return <></>;
 
   return (
-    <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div className="container-fluid services py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div className="container">
         <div className="text-center mx-auto mb-5" style={{ maxWidth: "600px" }}>
           <h5

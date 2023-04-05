@@ -137,15 +137,15 @@ const commonContainers = {
 const contactInfo = {
   companyAddress: "26 rue Bosquet 75007 Paris",
   phoneNumber: "+33 7 58 59 75 95",
-  emailAddress: "mmikou@mitconsulting.fr",
-  lang: "en",
+  emailAddress: "mounaim.touinssi@gmail.com",
+  lang: "fr",
 };
 const sweetMessages = {
   success: "L'email a bien été envoyé.",
   error: "L'email n'a pas bien envoyé, merci d'essayer à nouveau.",
 };
 
-const companyName = "MIT Consulting"
+const companyName = "MIT Consulting";
 
 const siteData = {
   header: {
@@ -154,36 +154,39 @@ const siteData = {
         url: "home",
         text: "Home",
         show: true,
-        title: 'Home',
+        title: "Home",
       },
       {
         url: "about",
         text: "About",
         show: true,
-        title: 'About Us',
+        title: "About Us",
       },
       {
         url: "services",
         text: "Services",
         show: true,
-        title: 'Services',
+        title: "Services",
       },
       {
         url: "career",
         text: "Career",
         show: true,
-        title: 'Career',
+        title: "Career",
       },
       {
         url: "contact",
         text: "Contact",
         show: true,
-        title: 'Contact Us',
+        title: "Contact Us",
       },
     ],
     phoneNumber: "+33758597595",
     phoneBgColor: "bg-secondary",
-    companyName: { fPart: companyName.split(" ")[0], lPart: companyName.split(" ").slice(1).join(" ") },
+    companyName: {
+      fPart: companyName.split(" ")[0],
+      lPart: companyName.split(" ").slice(1).join(" "),
+    },
   },
   footer: {
     pagelinks: [
@@ -272,7 +275,8 @@ const siteData = {
             {
               image: "carousel-1.jpg",
               title: "Multi-Cloud",
-              subTitle: "Strategic Design, Migration, FinOps, Maintenance & Monitoring",
+              subTitle:
+                "Strategic Design, Migration, FinOps, Maintenance & Monitoring",
               buttons: [
                 { url: "services", text: "Services" },
                 { url: "contact", text: "Contact Us" },
@@ -281,7 +285,8 @@ const siteData = {
             {
               image: "carousel-2.jpg",
               title: "Kubernetes/Compute",
-              subTitle: "Cluster Design, Workloads Migration, Monitoring & Maintenance",
+              subTitle:
+                "Cluster Design, Workloads Migration, Monitoring & Maintenance",
               buttons: [
                 { url: "services", text: "Services" },
                 { url: "contact", text: "Contact Us" },
@@ -299,7 +304,8 @@ const siteData = {
             {
               image: "carousel-4.jpg",
               title: "WebDev",
-              subTitle: "Custom web development, Web design, WebApps maintenance & support",
+              subTitle:
+                "Custom web development, Web design, WebApps maintenance & support",
               buttons: [
                 { url: "services", text: "Services" },
                 { url: "about", text: "About Us" },
