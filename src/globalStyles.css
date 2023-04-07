@@ -63,4 +63,10 @@
   .form-container .col-6 {
     width: 100%;
   }
+  .form-container.p-5 {
+    padding: 0.5rem !important;
+  }
+  .form-container.p-5 form > .row {
+    justify-content: center;
+  }
 }
