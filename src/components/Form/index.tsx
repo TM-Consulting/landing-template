@@ -150,7 +150,7 @@ const Form = (props: FormProps) => {
   );
   if (!props || !Object.keys(props)?.length) return <></>;
   return (
-    <div className="bg-light rounded p-5">
+    <div className="bg-light rounded p-5 form-container">
       <form>
         <div className="row g-3">
           {formBuilder()}
