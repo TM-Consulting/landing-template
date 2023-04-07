@@ -1,11 +1,10 @@
 import { NavItemProps } from "../../utils/types";
-import { Link } from "react-router-dom";
 const NavItem = ({ url, text, isActive, show }: NavItemProps) => {
   if (!show) return <></>;
   return (
-    <Link to={url} className={`nav-item nav-link ${isActive && "active"}`}>
+    <a href={url} className={`nav-item nav-link ${isActive && "active"}`}>
       {text}
-    </Link>
+    </a>
   );
 };
 
