@@ -15,7 +15,7 @@ const index = ({ image, name, description }: OldProjectItem) => {
           className="img-fluid rounded-top w-100"
           src={require(`../../config/images/${image}`)}
           alt=""
-          style={{ height: "400px" }}
+          style={{ height: "400px"}}
         />
       </div>
       <div className="bg-primary text-center rounded-bottom p-4">

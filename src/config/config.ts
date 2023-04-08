@@ -73,27 +73,27 @@ const commonContainers = {
     description: "Our Excellent Cloud consultancy services",
     items: [
       {
-        icon: "flaticon-cctv",
+        icon: "clouds",
         group: "Multi-Cloud",
         service: "Environment Lifecycle",
         description:
-          "Our teams provide a full cloud lifecycle services. From designing the environment, to setting up and creating resources, passing by designing target architecture for specific apps.",
+          "Seamlessly transition to the cloud with our Multi-Cloud Migration Service. Our team of experts will guide you through every step of the process, ensuring a smooth and efficient migration across various cloud platforms. We'll help you identify the best strategy, minimize downtime, and optimize costs while securing and enhancing your business operations. Embrace the power of multi-cloud with MIT Consulting.",
         readmore: "Read More",
       },
       {
-        icon: "flaticon-cctv",
-        group: "Group2",
-        service: "Service2",
+        icon: "rocket-takeoff-fill",
+        group: "Modern Compute Migrations",
+        service: "Kubernetes & DevOps",
         description:
-          "This is the first service served by the company on the groupo group1",
+          "Unlock the full potential of your software with our comprehensive Kubernetes and DevOps services. We streamline deployments, automate infrastructure management, and optimize workflows to deliver high-quality, scalable applications with speed and efficiency. Trust our team of experts to elevate your business to new heights with cutting-edge, secure, and resilient solutions.",
         readmore: "Read More",
       },
       {
-        icon: "flaticon-cctv",
-        group: "Group3",
-        service: "Service3",
+        icon: "code-square",
+        group: "Web Development",
+        service: "Dev & Maintenance",
         description:
-          "This is the first service served by the company on the groupo group1",
+          "Discover exceptional Web Development and Maintenance Services tailored for your business. Our experts design stunning, user-friendly websites that captivate and convert. We ensure seamless updates, top-tier security, and peak performance, propelling your online presence to new heights. Partner with us for a digital experience like no other. And secure the best design and maintenance for your applications.",
         readmore: "Read More",
       },
     ],
@@ -113,23 +113,23 @@ const commonContainers = {
       {
         image: "testimonial-1.jpg",
         description:
-          "MIT Consulting helped us migrate our workloads from on-premises to Azure Cloud environment.",
-        clientName: "ATJ",
-        profession: "Product Owner",
+          "Crafted a stunning, user-friendly website that boosted our online presence. Exceptional design and functionality. Thanks MIT Consulting. Highly recommend!",
+        clientName: "Sébastien Dufortier",
+        profession: "Entrepreneur",
       },
       {
         image: "testimonial-2.jpg",
         description:
-          "MIT Consulting assisted us on our first Cloud Native experiende. They assisted us on defining the target arhcitecture, the Azure services to be used, and also the standards and best practices for every service.",
-        clientName: "ATJ",
+          "MIT Consulting's Multi-Cloud Service made our migration seamless, cost-effective, and secure. Expert guidance elevated our cloud strategy. Top choice!",
+        clientName: "Fintella Whispershadow",
         profession: "Product Owner",
       },
       {
         image: "testimonial-3.jpg",
         description:
-          "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
-        clientName: "ATJ",
-        profession: "Product Owner",
+          "MIT Consulting's DevOps services boosted our app performance, streamlined deployments, and optimized workflows. Their expertise helped us excel. Highly recommend!",
+        clientName: "Grégoire Marceuil",
+        profession: "Program Manager",
       },
     ],
   },
@@ -319,7 +319,7 @@ const siteData = {
           parent: { text: "Home", url: "home" },
           bgImage: "About-Us.jpg",
           description:
-            "This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.This page is to describe about us in all possible ways in life.",
+            "Discover a team dedicated to empowering your business through cutting-edge digital solutions, personalized strategies, and industry expertise. We're committed to fostering growth, driving innovation, and ensuring long-term success for our valued clients.",
           color: "#ffffff",
         },
         about: { ...commonContainers.about },
@@ -329,18 +329,18 @@ const siteData = {
           items: [
             {
               name: "Cloud Native Pricing Platform",
-              image: "team-1.jpg",
+              image: "project-1.jpg",
               description: "Cloud native development of an online exposed pricing platform",
             },
             {
-              name: "Moad",
-              image: "team-4.jpg",
-              description: " rojoula had khouna ajiw 3Ndu",
+              name: "IaC template and pipelines for automation",
+              image: "project-2.jpg",
+              description: "Develop IaC template and DevOps pipelines for Blue-Green model",
             },
             {
-              name: "Moad",
-              image: "testimonial-2.jpg",
-              description: " rojoula had khouna ajiw 3Ndu",
+              name: "Azure Migration & Architecture design",
+              image: "project-3.jpg",
+              description: "Define architeture standard for Azure services consumption",
             },
           ],
         },
@@ -353,9 +353,9 @@ const siteData = {
           title: "Services",
           child: { text: "Services", url: "services" },
           parent: { text: "Home", url: "home" },
-          bgImage: "carousel-1.jpg",
+          bgImage: "services-bg.jpg",
           description:
-            " Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.",
+            "Experience a comprehensive suite of services tailored to your business needs. From web development and cloud migration to DevOps and beyond, we deliver exceptional solutions that drive growth, optimize workflows, and enhance your digital presence.",
           color: "#ffffff",
         },
         services: { ...commonContainers.services },
@@ -371,7 +371,7 @@ const siteData = {
           parent: { text: "Home", url: "home" },
           bgImage: "contact.jpg",
           description:
-            " Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.",
+            "Get in touch with our team of experts to explore the perfect solutions for your business. We're eager to hear your story, understand your challenges, and collaborate on a path to success. Reach out today and let's embark on this journey together.",
           color: "#ffffff",
         },
         contact: {
@@ -412,9 +412,9 @@ const siteData = {
           title: "Career",
           child: { text: "Career", url: "career" },
           parent: { text: "Home", url: "home" },
-          bgImage: "carousel-3.jpg",
+          bgImage: "career-bg.jpg",
           description:
-            " Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.",
+            "Join our dynamic team and contribute to a culture of innovation, collaboration, and growth. We value talent, embrace diversity, and prioritize personal development. Explore exciting opportunities and shape the future of digital solutions with us.",
           color: "#ffffff",
         },
         career: {
@@ -422,27 +422,27 @@ const siteData = {
           title: "Build your future with us",
           items: [
             {
-              image: "testimonial-1.jpg",
-              title: "Data engineer",
+              image: "position-1.jpg",
+              title: "DevOps Engineer",
               description:
-                "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
+                "Seeking a skilled DevOps Engineer! Join our team to enhance deployments, automate infrastructure, and optimize workflows.",
             },
             {
-              image: "testimonial-1.jpg",
-              title: "Data engineer",
+              image: "position-2.jpg",
+              title: "Cloud Architect",
               description:
-                "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
+                "Join our team as a Cloud Architect and revolutionize multi-cloud solutions. Expertise in AWS and Azure preferred.",
             },
             {
-              image: "testimonial-1.jpg",
-              title: "Data engineer",
+              image: "position-3.jpg",
+              title: "K8S consultant",
               description:
-                "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stetamet eirmod eos labore diam",
+                "Kubernetes Consultant Wanted! Join our team to streamline deployments, optimize workflows, and enhance scalability.",
             },
           ],
         },
         candidature: {
-          header: "Candidature spontané",
+          header: "Apply Spontaneously",
           title: "Apply to our upcoming offers",
           form: {
             fields: [...candidatureFormMapper],

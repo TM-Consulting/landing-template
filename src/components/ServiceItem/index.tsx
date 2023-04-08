@@ -5,7 +5,8 @@ const index = ({ icon="flaticon-cctv", group, service, description, readmore }: 
     <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
       <div className="service-item bg-light border-bottom border-5 border-primary rounded">
         <div className="position-relative p-5">
-          <i className={`${icon} d-block display-1 fw-normal text-secondary mb-3`}></i>
+        
+          <i className={`bi bi-${icon} d-block display-1 fw-normal text-secondary mb-3`}></i>
           <h5 className="text-primary mb-0">{group}</h5>
           <h3 className="mb-3">{service}</h3>
           <p>
