@@ -137,8 +137,8 @@ const commonContainers = {
 const contactInfo = {
   companyAddress: "26 rue Bosquet 75007 Paris",
   phoneNumber: "+33 7 58 59 75 95",
-  emailAddress: "mounaim.touinssi@gmail.com",
-  lang: "fr",
+  emailAddress: "mmikou@mitconsulting.fr",
+  lang: "en",
 };
 const sweetMessages = {
   success: "L'email a bien été envoyé.",
@@ -336,17 +336,20 @@ const siteData = {
             {
               name: "Cloud Native Pricing Platform",
               image: "project-1.jpg",
-              description: "Cloud native development of an online exposed pricing platform",
+              description:
+                "Cloud native development of an online exposed pricing platform",
             },
             {
               name: "IaC template and pipelines for automation",
               image: "project-2.jpg",
-              description: "Develop IaC template and DevOps pipelines for Blue-Green model",
+              description:
+                "Develop IaC template and DevOps pipelines for Blue-Green model",
             },
             {
               name: "Azure Migration & Architecture design",
               image: "project-3.jpg",
-              description: "Define architeture standard for Azure services consumption",
+              description:
+                "Define architeture standard for Azure services consumption",
             },
           ],
         },
