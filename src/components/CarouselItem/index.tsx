@@ -13,7 +13,6 @@ const index = ({
         className="w-100"
         src={require(`../../config/images/${image}`)}
         alt="Image"
-        style={{ height: '120vh', objectFit: 'cover' }}
       />
       <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
         <div className="p-3" style={{ maxWidth: "900px" }}>
