@@ -317,7 +317,7 @@ const siteData = {
           title: "About Us",
           child: { text: "About", url: "about" },
           parent: { text: "Home", url: "home" },
-          bgImage: "About-Us.jpg",
+          bgImage: "aboutus-bg.jpg",
           description:
             "Discover a team dedicated to empowering your business through cutting-edge digital solutions, personalized strategies, and industry expertise. We're committed to fostering growth, driving innovation, and ensuring long-term success for our valued clients.",
           color: "#ffffff",
@@ -369,7 +369,7 @@ const siteData = {
           title: "Contact Us",
           child: { text: "Contact", url: "contact" },
           parent: { text: "Home", url: "home" },
-          bgImage: "contact.jpg",
+          bgImage: "contact-bg.jpg",
           description:
             "Get in touch with our team of experts to explore the perfect solutions for your business. We're eager to hear your story, understand your challenges, and collaborate on a path to success. Reach out today and let's embark on this journey together.",
           color: "#ffffff",
