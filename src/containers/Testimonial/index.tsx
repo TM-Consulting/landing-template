@@ -5,7 +5,7 @@ const index = ({ header, title, items }: TestimonialProps) => {
   if (!items) return <></>;
   return (
     <div
-      className="container-fluid py-5 wow fadeInUp"
+      className="container-fluid testmonials py-5 wow fadeInUp"
       data-wow-delay="0.1s"
       style={{
         visibility: "visible",

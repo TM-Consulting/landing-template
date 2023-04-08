@@ -27,3 +27,46 @@
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
 }
+.container-fluid.services .service-item,
+.container-fluid.services .service-item .p-5,
+.testmonials .owl-item .text-center,
+.testmonials .owl-item .testimonial-text,
+.container-fluid.career .text-center {
+  height: 100%;
+}
+.container-fluid.old-projects .container .slideInUp .text-center {
+  height: 170px;
+}
+.testmonials .owl-item .testimonial-text,
+.text-truncate {
+  white-space: normal !important;
+}
+
+.container-fluid.client-carousel .carousel-item img {
+  height: 100vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-fluid.client-carousel .carousel-item img {
+    height: 40vh;
+  }
+}
+
+.hero-header {
+  height: 412px;
+}
+.hero-header .text-center.text-white {
+  width: 80% !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .form-container .col-6 {
+    width: 100%;
+  }
+  .form-container.p-5 {
+    padding: 0.5rem !important;
+  }
+  .form-container.p-5 form > .row {
+    justify-content: center;
+  }
+}

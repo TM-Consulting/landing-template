@@ -4,7 +4,7 @@ import { CarouselProps } from "../../utils/types";
 const index = ({ items }: CarouselProps) => {
   if (!items) return <></>;
   return (
-    <div className="container-fluid p-0 mb-5">
+    <div className="container-fluid client-carousel p-0 mb-5">
       <div
         id="header-carousel"
         className="carousel slide carousel-fade"
