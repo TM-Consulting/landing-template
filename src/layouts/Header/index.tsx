@@ -22,7 +22,6 @@ const Header = ({
       >
         <Helmet>
         <meta charSet="utf-8" />
-        <link href="../../config/images/favicon.ico" rel="icon" />
         <title>{`${companyName.fPart} ${companyName.lPart}` + ' | ' + (navLinks?.find(item=>item.url===window.location.pathname.split('/')[1])?.title || navLinks?.find(item=>item.url==='home')?.title) }</title>
       </Helmet>
         <Link to={"home"} className={`navbar-brand `}>
