@@ -24,7 +24,7 @@ const index = (props: aboutProps) => {
               <img
                 className="position-absolute w-100 h-100 rounded wow zoomIn"
                 data-wow-delay="0.3s"
-                src={require("../../config/images/about.jpg")}
+                src={require("../../config/images/about-container.jpg")}
                 style={{
                   objectFit: "cover",
                   visibility: "visible",

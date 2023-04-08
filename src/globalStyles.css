@@ -19,3 +19,11 @@
     width: 32%;
   }
 }
+
+.container-fluid p.text-center.text-white {
+  font-weight: bold !important;
+  background-color: hsla(0, 0%, 50%, 0.6);
+  border-radius: 10px;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
