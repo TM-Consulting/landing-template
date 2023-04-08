@@ -43,7 +43,8 @@
 }
 
 .container-fluid.client-carousel .carousel-item img {
-  height: 100vh;
+  height: 120vh;
+  object-fit: "cover";
 }
 
 @media screen and (max-width: 1024px) {
