@@ -17,12 +17,14 @@ import "./assets/css/style.css";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 const faviconUrl = require("./config/images/favicon.ico");
 
 root.render(
   <React.StrictMode>
     <App />
     <Helmet>
+      <link href={faviconUrl} rel="icon" />
       <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
       <link href={faviconUrl} rel="icon" />
       <script
