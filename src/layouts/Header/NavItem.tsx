@@ -1,10 +1,16 @@
+import { Link } from "react-router-dom";
 import { NavItemProps } from "../../utils/types";
-const NavItem = ({ url, text, isActive, show }: NavItemProps) => {
+
+const NavItem = ({ url, text, isActive, show, onClick }: NavItemProps) => {
   if (!show) return <></>;
   return (
-    <a href={url} className={`nav-item nav-link ${isActive && "active"}`}>
+    <Link
+      to={url}
+      className={`nav-item nav-link ${isActive && "active"}`}
+      onClick={() => onClick(false)}
+    >
       {text}
-    </a>
+    </Link>
   );
 };
 
