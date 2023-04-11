@@ -4,6 +4,7 @@ interface NavItemProps {
   isActive?: boolean;
   show: boolean;
   title?: string;
+  onClick?: any;
 }
 interface CarouselItemButtons {
   url: string;
