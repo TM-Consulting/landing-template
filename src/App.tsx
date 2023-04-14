@@ -36,7 +36,7 @@ const Routes = () => (
 function App() {
   return (
     <>
-      {BACKEND_URL}
+      <div>backURL:{BACKEND_URL}</div>
       <BrowserRouter>
         <Header {...siteData.header} />
 
