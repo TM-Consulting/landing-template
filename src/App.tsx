@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Career from "./pages/Career";
+import { BACKEND_URL } from "./variables";
 
 const routes: any = {
   home: Home,
@@ -25,9 +26,7 @@ const Routes = () => (
       if (item.show)
         return (
           <Route exact path={`/${item.url}`}>
-            <Component
-              {...(siteData as any).pages[item.url]}
-            />
+            <Component {...(siteData as any).pages[item.url]} />
           </Route>
         );
       return <></>;
@@ -37,6 +36,7 @@ const Routes = () => (
 function App() {
   return (
     <>
+      {BACKEND_URL}
       <BrowserRouter>
         <Header {...siteData.header} />
 
