@@ -1,7 +1,6 @@
-name: TEST call with input.
+name: Ask for Input Workflow
 
-on:
-  workflow_dispatch:
+on: [push]
 
 jobs:
   input_job:
@@ -10,6 +9,7 @@ jobs:
     steps:
     - name: Ask for Input
       run: |
-        echo "What is your name?"
-        read name
+        echo "::group::Input Required"
+        read -p 'What is your name? ' name
+        echo "::endgroup::"
         echo "Hello, $name!"
